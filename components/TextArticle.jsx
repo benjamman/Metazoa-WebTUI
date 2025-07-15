@@ -1,8 +1,8 @@
 import HighlightText from "./HighlightText";
 import ShortcutLabel from "./ShortcutLabel";
 
-function TextArticle({ article, searchTerms, shortcut="none" }) {
-    return <article className="ar" box-="round" shear-="both" style={{ marginBottom: "1lh" }}>
+function TextArticle({ article, searchTerms, shortcut="none", active=false }) {
+    return <article className={ active ? "ar active" : "ar" } box-="square" shear-="both" style={{ marginBottom: "1lh" }}>
         <div className="header">
             <span is-="badge" variant-="background2">{new URL(article.href).hostname}</span>
             <ShortcutLabel mod={shortcut[0]} bind={shortcut[1]} />
@@ -10,7 +10,7 @@ function TextArticle({ article, searchTerms, shortcut="none" }) {
         <header style={{
             padding: "1lh 1ch 0 1ch"
         }}>
-            <a href={article.href} style={{textDecoration: "none"}} className="article-hyperlink" data-shortcut-mod={shortcut[0]} data-shortcut-key={shortcut[1]} data-shortcut-action="click" >
+            <a href={article.href} style={{textDecoration: "none"}} className="article-hyperlink main-anchor">
                 <div>
                     <div style={{
                             display: "grid",
@@ -32,11 +32,16 @@ function TextArticle({ article, searchTerms, shortcut="none" }) {
         <p className="article-description">
             <HighlightText text={article.description} searchTerms={searchTerms} />
         </p>
-        <div className="footer">
-            {Object.entries(article.engines).map((engine, index) => {
-                const ei = `${engine[0]}: ${engine[1]}`;
-                return <li key={ei} is-="badge" variant-="background0">{ei}</li>;
-            })}
+        <div className="header">
+            <div>
+                {Object.entries(article.engines).map((engine, index) => {
+                    const ei = `${engine[0]}: ${engine[1]}`;
+                    return <li key={ei} is-="badge" variant-="background0">{ei}</li>;
+                })}
+            </div>
+            <span is-="badge" variant-="background0">
+                Description provided by {article.descriptor}
+            </span>
         </div>
     </article>;
 }

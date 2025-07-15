@@ -67,8 +67,9 @@ app.get("/search", async (req, res) => {
     if (q.match(/\!\w/)) return redirect("unduck.link", q);
 
     const articles = await textSearcher.get(q);
+    const suggestions = await suggester.get(q);
 
-    res.send(htmlTemplate(<Search query={q} articles={articles} />));
+    res.send(htmlTemplate(<Search query={q} articles={articles} suggestions={suggestions} />));
 });
 
 app.listen(PORT, () => {

@@ -15,7 +15,7 @@ function setAppWidth() {
     const app = document.getElementById("app");
     const paddingCount = 1;
     const offset = (diff / 2) + (paddingCount * controlChar.offsetWidth);
-    const finalWidth = chCount - (paddingCount * 2);
+    const finalWidth = Math.min(chCount - (paddingCount * 2), 130);
 
     app.marginInline = `${offset}px`;
     app.style.width = `${finalWidth}ch`;
@@ -40,3 +40,264 @@ window.addEventListener("resize", () => {
 });
 
 window.addEventListener("load", setAppWidth);
+
+function moveToItem({ index, item, direction }) {
+    const items = document.getElementsByClassName("ar");
+    const activeItem = document.querySelector(".ar.active");
+    let activeIndex = 0;
+    if (activeItem) {
+        activeIndex = Array.from(items).indexOf(activeItem);
+    }
+
+    activeItem.classList.remove("active");
+
+    if (index) { 
+        activeIndex = index; 
+    }
+    else if (direction) {
+        activeIndex = direction === "down" ? Math.min(activeIndex+1,items.length-1) : Math.max(activeIndex-1,0);
+    } 
+    else if (item) {
+        activeIndex = Array.from(items).indexOf(item);
+    }
+
+    const newActiveItem = items[activeIndex];
+    newActiveItem.classList.add("active");
+    
+    if (activeIndex < 3) {
+        scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+        return;
+    }
+
+    newActiveItem.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+    });
+
+}
+
+function clickActiveArticle() {
+    document.querySelector(".ar.active a.article-hyperlink.main-anchor")?.click();
+}
+
+function highlightModKey(mod, highlight = true) {
+    document.querySelectorAll(`[data-mod-key="${mod}"]`).forEach(item => {
+        item.style.color = highlight ? "cornflowerblue" : "";
+    });
+}
+
+function focusAndSelect(inputElement, selectAll = true, range) {
+    inputElement.focus();
+    const len = inputElement.value.length;
+    if (selectAll) {
+        inputElement.setSelectionRange(0, len);
+    } else {
+        inputElement.setSelectionRange(range?.[0] || len, range?.[1] || len);
+    }
+}
+
+let KEY_LAYER = "default";
+let dataShortcuts = [];
+
+
+function setupDataShortcuts() {
+    const shortcutElements = document.querySelectorAll("[data-shortcut]");
+    dataShortcuts = Array.from(shortcutElements).map((element, index) => {
+        const split = element.getAttribute("data-shortcut").split(',');
+        const intermediatActions = split[3].split("/");
+        let actions;
+        if (intermediatActions.length > 1) {
+            actions = {
+                // This is on purpose, third action can only be browser default
+                type: intermediatActions.length > 2 ? "tripple" : "double",
+                groups: [
+                    intermediatActions[0].split('+'),
+                    intermediatActions[1].split('+')
+                ]
+            };
+        } else {
+            actions = {
+                type: "single",
+                groups: [
+                    intermediatActions[0].split('+'),
+                ]
+            };
+        }
+        return {
+            layer:    split[0],
+            mod:      split[1],
+            bind:     split[2].toLowerCase(),
+            actions,
+            element 
+        }
+    });
+}
+
+function modDown(mod, event) {
+    return (mod === "ctrl"  && event.ctrlKey)  ||
+           (mod === "shift" && event.shiftKey) ||
+           (mod === "alt"   && event.altKey);
+}
+
+function runActionGroup(shortcut, groupIndex) {
+    shortcut.actions.groups[groupIndex].forEach(action => {
+       switch (action) {
+           case "scroll":
+               shortcut.element.scrollIntoView({ behavior: "smooth", block: "center" });
+               break;
+           case "click":
+               shortcut.element.click();
+               break;
+           case "focus":
+               shortcut.element.focus();
+               break;
+           case "selectAll":
+               focusAndSelect(shortcut.element, true);
+               break;
+           case "selectEnd":
+               focusAndSelect(shortcut.element, false);
+               break;
+           case "preventDefault":
+               event.preventDefault();
+               break;
+       }
+    });
+
+}
+
+function dataShortcutSystem(event) {
+    // I'm allow multiple, it's a feature, not a bug
+    // The reason is so I can attach a shortcut to act on multiple elements easier
+    const shortcuts = dataShortcuts.filter(data => {
+        return (data.layer === "all" || data.layer === KEY_LAYER) &&
+               (modDown(data.mod, event)) && event.key.toLowerCase() === data.bind;
+    });
+    shortcuts.forEach(shortcut => {
+        function resetActionCounter() {
+            if (document.activeElement === shortcut.element) {
+                setTimeout(resetActionCounter, 1000);
+                return;
+            }
+            shortcut.element.removeAttribute("data-action-counter");
+        }
+        // Only doing tripples for now, and the third time it will run the default browser action
+        if (shortcut.actions.type === "double" || shortcut.actions.type === "tripple") {
+            if (shortcut.element.getAttribute("data-action-counter") > 1) {
+                // this should just allow a default action
+                shortcut.element.removeAttribute("data-action-counter");
+                return true;
+            } 
+            else if (shortcut.element.getAttribute("data-action-counter") > 0) {
+                runActionGroup(shortcut, 1);
+                if (shortcut.actions.type === "double") {
+                    shortcut.element.removeAttribute("data-action-counter");
+                } else {
+                    shortcut.element.setAttribute("data-action-counter", 2);
+                }
+                return;
+            } else {
+                shortcut.element.setAttribute("data-action-counter", 1);
+                setTimeout(resetActionCounter, 500);
+            }
+        }
+        runActionGroup(shortcut, 0);
+    });
+    return !!shortcuts;
+}
+
+window.addEventListener("keydown", event => {
+    if (event.key === "Escape") {
+        // Should be handeld better when I have popovers
+        if (document.activeElement) {
+            document.activeElement.blur();
+            document.body.focus();
+        }
+    }
+    if (dataShortcutSystem(event)) return;
+    if (event.ctrlKey && (!event.shiftKey && !event.altKey)) {
+        switch (event.key) {
+            // Hardcoded for performance, maybe
+            // Realistically it's inconsequential
+            case "1":
+                moveToItem({ index: 0 });
+                clickActiveArticle();
+                break;
+            case "2":
+                moveToItem({ index: 1 });
+                clickActiveArticle();
+                break;
+            case "3":
+                moveToItem({ index: 2 });
+                clickActiveArticle();
+                break;
+            case "4":
+                moveToItem({ index: 3 });
+                clickActiveArticle();
+                break;
+            case "5":
+                moveToItem({ index: 4 });
+                clickActiveArticle();
+                break;
+            case "6":
+                moveToItem({ index: 5 });
+                clickActiveArticle();
+                break;
+            case "7":
+                moveToItem({ index: 6 });
+                clickActiveArticle();
+                break;
+            case "8":
+                moveToItem({ index: 7 });
+                clickActiveArticle();
+                break;
+            case "9":
+                moveToItem({ index: 8 });
+                clickActiveArticle();
+                break;
+            case "0":
+                moveToItem({ index: 9 });
+                clickActiveArticle();
+                break;
+        }
+        highlightModKey("ctrl");
+    }
+    if (event.shiftKey && (!event.ctrlKey && !event.altKey)) {
+        if (event.key) {}
+        highlightModKey("shift");
+    }
+    if (event.altKey && (!event.ctrlKey && !event.shiftKey)) {
+        if (event.key) {}
+        highlightModKey("alt");
+    }
+    switch (KEY_LAYER) {
+        default:
+            switch (event.key) {
+                case "j":
+                    moveToItem({ direction: "down" });
+                    break;
+                case "k":
+                    moveToItem({ direction: "up" });
+                    break;
+                case "Enter":
+                    clickActiveArticle();
+                    break;
+            }
+            break;
+    }
+});
+
+window.addEventListener("keyup", event => {
+    if (!event.ctrlKey)  { highlightModKey("ctrl",  false); }
+    if (!event.shiftKey) { highlightModKey("shift", false); }
+    if (!event.altKey)   { highlightModKey("alt",   false); }
+});
+
+window.addEventListener("load", () => {
+    if (!event.ctrlKey)  { highlightModKey("ctrl",  false); }
+    if (!event.shiftKey) { highlightModKey("shift", false); }
+    if (!event.altKey)   { highlightModKey("alt",   false); }
+    setupDataShortcuts();
+});

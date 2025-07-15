@@ -2,45 +2,135 @@ import SearchForm from "../components/SearchForm";
 import TextArticle from "../components/TextArticle";
 import ShortcutLabel from "../components//ShortcutLabel";
 
-function Search({ query, articles }) {
+function Search({ query, articles, suggestions }) {
     const searchTerms = query.split(/\s/);
     return <>
         <header className="page-header">
-            <pre class="logo-mini">{` _ _      ____  ()
-//\\/\\etazoaL||U|[]
-             \`-'  `}</pre>
+<pre className="logo-mini" title="Logo">
+  {`  _ _     _____  —–
+ //\\/\\etazoa|||U|||
+/\``}
+  <span style={{ color: '#fff2' }} title="We are number one!">slueth #1</span>
+  {` L|\`-'–—`}
+</pre>
             <div box-="square" shear-="top">
                 <div className="header">
                     <span is-="badge" variant-="background2">
                         About 
                     </span>
-                    <ShortcutLabel mod="shift" bind="1-4" />
+                    <ShortcutLabel mod="shift" bind="1-5" />
                 </div>
                 <ul>
                     <li is-="badge" variant-="background0">
                         <a href="/">Home</a>
                     </li>
                     <li is-="badge" variant-="background0">
-                        <a href="/">Github</a>
+                        <a href="https://github.com/benjamman/metazoa-webtui">Github</a>
                     </li>
                     <li is-="badge" variant-="background0">
-                        <a href="/">WebTUI</a>
+                        <a href="https://github.com/webtui/webtui">WebTUI</a>
                     </li>
                     <li is-="badge" variant-="background0">
-                        <a href="/">Metazoa</a>
+                        <a href="https://github.com/FusedFrameworks/metazoa-js">Metazoa</a>
+                    </li>
+                    <li is-="badge" variant-="background0">
+                        <a href="/settings">Settings</a>
                     </li>
                 </ul>
             </div>
             <SearchForm query={query} />
         </header>
-        {articles.map((result, index) => {
-            let shortcut = [];
-            if (index <= 9) {
-                shortcut = ["ctrl", 0];
-                if (index < 9) shortcut[1] = index+1;
-            }
-            return <TextArticle key={index} article={result} searchTerms={searchTerms} shortcut={shortcut} />
-        })}
+        <div className="page-columns">
+            <main id="main">
+                <header box-="square" shear-="top">
+                    <div className="header">
+                        <span is-="badge" variant-="background2">
+                            Toolbar
+                        </span>
+                        <ShortcutLabel mod="shift" bind="t" />
+                    </div>
+                    <ul>
+                        <li is-="badge" variant-="background0">
+                            <a href="/">Web</a>
+                        </li>
+                        {/*<li is-="badge" variant-="background0">
+                            <a href="/">Images</a>
+                        </li>
+                        <li is-="badge" variant-="background0">
+                            <a href="/">Videos</a>
+                        </li>
+                        <li is-="badge" variant-="background0">
+                            <a href="/">News</a>
+                        </li>
+                        <li is-="badge" variant-="background0">
+                            <a href="/">Forums</a>
+                        </li>
+                        <li is-="badge" variant-="background0">
+                            <a href="/">Books</a>
+                        </li>*/}
+                    </ul>
+                </header>
+                {articles.map((result, index) => {
+                    let shortcut = [];
+                    if (index <= 9) {
+                        shortcut = ["ctrl", 0];
+                        if (index < 9) shortcut[1] = index+1;
+                    }
+                    return <TextArticle {...(index === 0 && { active: true })} key={index} article={result} searchTerms={searchTerms} shortcut={shortcut} />
+                })}
+            </main>
+            <div>
+                <div box-="square" shear-="top">
+                    <div className="header">
+                        <span is-="badge" variant-="background2">
+                            Filters
+                        </span>
+                        <ShortcutLabel mod="shift" bind="f" />
+                    </div>
+                    <ul className="flexy-badges">
+                        <li is-="badge" variant-="background1">safesearch</li>
+                        <li is-="badge" variant-="background1">badware</li>
+                        <li is-="badge" variant-="background1">+</li>
+                    </ul>
+                </div>
+                <div box-="square" shear-="top">
+                    <div className="header">
+                        <span is-="badge" variant-="background2">
+                            Suggestions
+                        </span>
+                        <ShortcutLabel mod="shift" bind="s" />
+                    </div>
+                    <ul className="suggestions-box flexy-badges">
+                        {suggestions.map((suggestion, index) => {
+                            const visibleSuggestion = suggestion.q.replace(query, '');
+                            if (visibleSuggestion.length > 32) return;
+                            return <a href={`/search?q=${suggestion.q}`}>
+                                <li key={index} is-="button" size-="small" variant-="background1">
+                                    {visibleSuggestion}
+        </li>
+                            </a>;
+                        })}
+                    </ul>
+                </div>
+                <div box-="square" shear-="top">
+                    <div className="header">
+                        <span is-="badge" variant-="background2">
+                            Extra content
+                        </span>
+                        <ShortcutLabel mod="shift" bind="e"/>
+                    </div>
+                    <p style={{padding:"1lh 1ch"}}>
+Dummy text refers to placeholder text used in the design and publishing industries to demonstrate the visual appearance of a document or layout without using meaningful content. It is commonly used in graphic design, web development, and typography to show how text will look in a given format.
+
+One of the most well-known examples of dummy text is Lorem Ipsum, which has been the industry's standard dummy text since the 1500s.
+Lorem Ipsum is derived from a corrupted version of a Latin text by Cicero, and it has been used in typesetting since the 1960s, popularized by advertisements for Letraset transfer sheets. It was later introduced to the digital world in the mid-1980s through desktop publishing programs like Aldus PageMaker.
+
+Dummy text is often used to test fonts, layouts, and designs without the distraction of readable content. It helps designers and developers focus on the visual aspects of a page rather than the meaning of the text.
+The use of dummy text ensures that the layout and formatting can be evaluated independently of the actual content that will eventually be placed in the design.
+                    </p>
+                </div>
+            </div>
+        </div>
     </>;
 }
 

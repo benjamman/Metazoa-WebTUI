@@ -63,7 +63,7 @@
 
 .page-header {
     display: grid;
-    grid-template-columns: 19ch auto 36ch;
+    grid-template-columns: 20ch 45ch 1fr;
     gap: 1ch;
 }
 .layout1 .page-header {
@@ -82,6 +82,36 @@
     gap: 1ch;
 }
 
+.layout2 .page-columns {
+    display: grid;
+    grid-template-columns: 66ch 1fr;
+    gap: 1ch;
+}
+.layout2 #main {
+    max-width: 66ch;
+}
+.layout2 .page-columns>div:last-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexy-badges {
+    padding-inline: 1ch;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1ch;
+    list-style-type: none;
+}
+.suggestions-box {
+    padding: 1lh 1ch;
+}
+.suggestions-box li:hover {
+    color: cornflowerblue;
+}
+.suggestions-box li::before {
+    content: "+ ";
+}
+
 .ellipsis {
     white-space: nowrap;
     overflow: hidden;
@@ -97,6 +127,10 @@
     -moz-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
+}
+
+.ar.active {
+    --box-border-color: var(--foreground1);
 }
 .article-favicon-wrapper {
     width: 3ch; 
