@@ -197,15 +197,16 @@ function dataShortcutSystem(event) {
                 } else {
                     shortcut.element.setAttribute("data-action-counter", 2);
                 }
-                return;
+                return true;
             } else {
                 shortcut.element.setAttribute("data-action-counter", 1);
                 setTimeout(resetActionCounter, 500);
             }
         }
         runActionGroup(shortcut, 0);
+        return true;
     });
-    return !!shortcuts;
+    return false;
 }
 
 window.addEventListener("keydown", event => {
