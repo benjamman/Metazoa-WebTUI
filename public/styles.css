@@ -1,0 +1,141 @@
+@layer base, utils, components;
+
+@import "https://cdn.jsdelivr.net/npm/@webtui/css@0.1.4/dist/full.css";
+
+@layer base {
+    :root {
+        background-color: var(--background0);
+    }
+    body {
+        --box-border-color: var(--background2);
+        --box-rounded-radius: 8px;
+        --box-border-width: 1px;
+        --box-double-border-width: 1px;
+    }
+}
+
+@layer components {
+    /*h1::before { content: "# "; }
+    h2::before { content: "## "; }
+    h3::before { content: "### "; }
+    h4::before { content: "#### "; }
+    h5::before { content: "##### "; }
+    h6::before { content: "###### "; }*/
+    /*[is-="input"]:focus {
+        box-shadow: inset 0 -2px 0 0 var(--foreground2);
+    }*/
+    .header { 
+ 	      display: flex;
+ 	      justify-content: space-between; 
+ 	  }
+    [is-="button"]:focus {
+        --background1: var(--background2);
+    }
+    [is-="input"][size-="default"] {
+        padding-inline: 1ch;
+    }
+    a {
+        color: cornflowerblue;
+    }
+    a:visited {
+        color: lightblue;
+    }
+    a:focus {
+        outline: 2px solid cornflowerblue;
+        outline-offset: 0.65ch;
+    }
+    [box-]:hover {
+        --box-border-color: var(--foreground2);
+    }
+    [box-]:focus-within {
+        --box-border-color: var(--foreground1);
+    }
+}
+
+#app {
+    margin-inline: auto;
+    transition: width 200ms;
+    position: absolute;
+    left: 50%;
+    top: 1lh;
+    transform: translateX(-50%);
+}
+
+.page-header {
+    display: grid;
+    grid-template-columns: 19ch auto 36ch;
+    gap: 1ch;
+}
+.layout1 .page-header {
+    grid-template-columns: 1fr;
+}
+
+.logo-mini {
+    padding: 1px;
+    background: transparent;
+}
+
+.search-form>.wrapper {
+    padding-inline: 1ch;
+    display: grid;
+    grid-template-columns: 1fr 4ch;
+    gap: 1ch;
+}
+
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.wrap-all {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word; /* non-standard but works in WebKit */
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+.article-favicon-wrapper {
+    width: 3ch; 
+    height: 2lh;
+    display: grid;
+    align-items: center;
+    position: relative;
+    isolation: isolate;
+}
+.article-favicon-wrapper:before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    left:0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    aspect-ratio: 1/1;
+    background-color: #fff;
+    border-radius: 100%;
+}
+.article-favicon {
+    max-width: 100%; max-height: 100%; width: 100%; aspect-ratio: 1/1;
+}
+.article-description {
+    padding: 1lh 1ch;
+}
+.article-description>span {
+    height: 2lh;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+.article-description>span::after {
+    content: "...";
+    padding-inline-end: 1ch;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--background0);
+}
+
