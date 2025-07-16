@@ -72,6 +72,6 @@ app.get("/search", async (req, res) => {
     res.send(htmlTemplate(<Search query={q} articles={articles} suggestions={suggestions} />));
 });
 
-app.listen(PORT, () => {
-    console.log(`Server is running at https://localhost:${PORT}`);
+app.listen(PORT, "0.0.0.0", () => {
+    console.log(`Server is listening at https://0.0.0.0:${PORT}`);
 });
