@@ -50,6 +50,9 @@
     [box-]:focus-within {
         --box-border-color: var(--foreground1);
     }
+    .highlight {
+        color: cornflowerblue;
+    }
 }
 
 #app {
@@ -63,7 +66,7 @@
 
 .page-header {
     display: grid;
-    grid-template-columns: 20ch 45ch 1fr;
+    grid-template-columns: 21ch 44ch 1fr;
     gap: 1ch;
 }
 .layout1 .page-header {
@@ -73,6 +76,10 @@
 .logo-mini {
     padding: 1px;
     background: transparent;
+}
+
+[data-layername="about"] a{
+    color: #89b4fa;
 }
 
 .search-form>.wrapper {
@@ -104,6 +111,9 @@
 }
 .suggestions-box {
     padding: 1lh 1ch;
+}
+.suggestions-box li {
+    min-width: 7ch;
 }
 .suggestions-box li:hover {
     color: cornflowerblue;
@@ -172,4 +182,18 @@
     right: 0;
     background-color: var(--background0);
 }
-
+.highlight-or-hidden {
+    display: relative;
+}
+.highlight-or-hidden>span {
+    position: absolute;
+    right:1ch;
+    display: none;
+}
+.highlight-or-hidden>span:first-child {
+    display: inline;
+}
+.highlight-or-hidden>span:has(.highlight) {
+    display: inline;
+    z-index: 8;
+}
