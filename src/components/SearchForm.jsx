@@ -7,7 +7,7 @@ function SearchForm({ query = "", shortcut = [ "ctrl", "k" ] }) {
             <ShortcutLabel mod={shortcut[0]} bind={shortcut[1]} />
         </div>
         <div className="wrapper">
-            <input type="serach" name="q" defaultValue={query} placeholder="Search..." is-="input" variant-="background3" size="small" data-shortcut={`all,${shortcut.join(',')},selectEnd+preventDefault/selectAll+preventDefault`}/>
+            <input type="serach" name="q" defaultValue={query} placeholder="Search..." is-="input" variant-="background3" size="small" data-layername="search" data-layertype="input" data-shortcut={`all,${shortcut.join(',')},selectEnd+setLayer+preventDefault/selectAll+setLayer+preventDefault`}/>
             <input type="submit" value="Go" variant-="background2" size-="small" />
         </div>
     </form>;

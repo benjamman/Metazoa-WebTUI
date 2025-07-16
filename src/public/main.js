@@ -76,7 +76,6 @@ function moveToItem({ index, item, direction }) {
         behavior: "smooth",
         block: "center"
     });
-
 }
 
 function clickActiveArticle() {
@@ -203,6 +202,10 @@ function runActionGroup(shortcut, groupIndex) {
                 break;
             case "selectEnd":
                 focusAndSelect(shortcut.element, false);
+                break;
+            case "setLayer":
+                LAYER = shortcut.element.getAttribute("data-layername");
+                LAYER_TYPE = shortcut.element.getAttribute("data-layertype");
                 break;
             case "sectionNavigationLayer":
                 nearestFocusable = getFocusableElements(shortcut.element);
