@@ -43,9 +43,12 @@ function TextArticle({ article, searchTerms, shortcut="none", active=false }) {
                     return <li key={ei} is-="badge" variant-="background0">{ei}</li>;
                 })}
             </div>
-            <span is-="badge" variant-="background0">
+            {
+            // This should be a shorcut/link that shows up when you select or hover the result
+            // It should popup a UI to show more result info
+            /*<span is-="badge" variant-="background0">
                 Description provided by {article.descriptor}
-            </span>
+            </span>*/}
         </div>
     </article>;
 }

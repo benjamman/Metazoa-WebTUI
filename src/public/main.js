@@ -1,6 +1,17 @@
 
+function calcLh(mult = 1) {
+    // More accuracy since, it has to be more exact. Unlike ch which has a buffer area
+    return parseFloat(getComputedStyle(document.getElementById("control-char")).lineHeight) * mult;
+}
+
+function calcCh(mult = 1) {
+    return controlChar.offsetWidth * mult;
+}
+
+let controlChar;
+
 function setAppWidth() {
-    let controlChar = document.getElementById("control-char");
+    controlChar = document.getElementById("control-char");
     if (!controlChar) {
         controlChar = document.createElement("span");
         controlChar.style.width = "1ch";
@@ -11,10 +22,10 @@ function setAppWidth() {
 
     }
     const chCount = Math.floor(window.innerWidth / controlChar.offsetWidth);
-    const diff = Math.floor((controlChar.offsetWidth * chCount) - window.innerWidth);
+    const diff = Math.floor(calcCh(chCount) - window.innerWidth);
     const app = document.getElementById("app");
     const paddingCount = 1;
-    const offset = (diff / 2) + (paddingCount * controlChar.offsetWidth);
+    const offset = (diff / 2) + calcCh(paddingCount);
     const finalWidth = Math.min(chCount - (paddingCount * 2), 130);
 
     app.marginInline = `${offset}px`;
@@ -64,7 +75,7 @@ function moveToItem({ index, item, direction }) {
     const newActiveItem = items[activeIndex];
     newActiveItem.classList.add("active");
     
-    if (activeIndex < 3) {
+    if (activeIndex < 3 && window.innerHeight > calcLh(50)) {
         scrollTo({
             top: 0,
             behavior: "smooth"
@@ -114,6 +125,14 @@ function focusAndSelect(inputElement, selectAll = true, range) {
 let LAYER = "normal", LAYER_TYPE = "normal";
 let dataShortcuts = [];
 let nearestFocusable;
+
+function setLayer(newLayer, newLayerType) {
+    LAYER = newLayer;
+    LAYER_TYPE = newLayerType;
+    Array.from(document.getElementsByClassName("layer-label"))?.forEach(element => {
+        element.textContent = LAYER.toUpperCase();
+    });
+}
 
 
 function setupDataShortcuts() {
@@ -186,8 +205,6 @@ function getFocusableElements(container) {
         .filter(Boolean)
         .sort((a, b) => a.distance - b.distance);
 
-    console.log(aboveElements, belowElements)
-
     return {
         left: nextIndex =  focusableElements[Math.max(0, currentIndex - 1)],
         right: nextIndex = focusableElements[Math.min(focusableElements.length - 1, currentIndex + 1)],
@@ -216,15 +233,19 @@ function runActionGroup(shortcut, groupIndex) {
                 focusAndSelect(shortcut.element, false);
                 break;
             case "setLayer":
-                LAYER = shortcut.element.getAttribute("data-layername");
-                LAYER_TYPE = shortcut.element.getAttribute("data-layertype");
+                setLayer(
+                    shortcut.element.getAttribute("data-layername"),
+                    shortcut.element.getAttribute("data-layertype")
+                );
                 break;
             case "sectionNavigationLayer":
                 nearestFocusable = getFocusableElements(shortcut.element);
                 nearestFocusable.left.focus();
                 nearestFocusable = getFocusableElements(shortcut.element);
-                LAYER = shortcut.element.getAttribute("data-layername");
-                LAYER_TYPE = "section-navigation";
+                setLayer(
+                    shortcut.element.getAttribute("data-layername"),
+                    "section-navigation"
+                )
                 break;
             case "preventDefault":
                event.preventDefault();
@@ -290,8 +311,7 @@ window.addEventListener("keydown", event => {
     }
     if (event.key === "Escape") {
         // Should be handeld better when I have popovers
-        LAYER = "normal";
-        LAYER_TYPE = "normal";
+        setLayer("normal", "normal");
         if (document.activeElement) {
             document.activeElement.blur();
             document.body.focus();
@@ -394,6 +414,32 @@ window.addEventListener("keydown", event => {
                 break;
         }
         return;
+    } else if (LAYER === "normal") {
+        let lh;
+        switch (event.key) {
+            case "j":
+                window.scrollBy({
+                    top: calcLh(10),
+                    behavior: 'smooth'
+                });
+                break;
+            case "k":
+                if ((window.scrollY || document.documentElement.scrollTop) < 250) {
+                    scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    })
+                } else {
+                    window.scrollBy({
+                        top: -calcLh(10),
+                        behavior: 'smooth'
+                    });
+                }
+                break;
+            case "Enter":
+                clickActiveArticle();
+                break;
+        }
     }
     if (LAYER_TYPE === "section-navigation") {
         switch (event.key) {

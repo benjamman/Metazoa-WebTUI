@@ -1,10 +1,12 @@
 import Header from "../components/Header";
+import StatusLine from "../components/StatusLine";
 import TextArticle from "../components/TextArticle";
 import ShortcutLabel from "../components//ShortcutLabel";
 
 function Search({ query, articles, suggestions }) {
     const searchTerms = query.split(/\s/);
     return <>
+            <StatusLine />
             <Header query={query} />
             <div className="page-columns">
             <main id="main">
@@ -66,7 +68,7 @@ function Search({ query, articles, suggestions }) {
                         </span>
                         <ShortcutLabel bind="s" />
                     </div>
-                    <ul className="suggestions-box flexy-badges" data-layername="suggestions-box" data-shortcut={`normal,none,s,sectionNavigationLayer`}>
+                    <ul className="suggestions-box flexy-badges" data-layername="suggestions" data-shortcut={`normal,none,s,sectionNavigationLayer`}>
                         {suggestions.map((suggestion, index) => {
                             const visibleSuggestion = suggestion.q.replace(query, '');
                             if (visibleSuggestion.length > 32) return;

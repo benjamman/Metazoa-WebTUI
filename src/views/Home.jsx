@@ -1,8 +1,10 @@
 import Header from "../components/Header";
 import ShortcutLabel from "../components/ShortcutLabel";
+import StatusLine from "../components/StatusLine";
 
 function Home() {
     return <>
+        <StatusLine />
         <Header />
 
         <br/>

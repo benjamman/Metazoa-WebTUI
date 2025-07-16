@@ -6,6 +6,9 @@
     :root {
         background-color: var(--background0);
     }
+    html {
+        scroll-padding-top: calc((100vh - round(95vh, 1lh)) - 0.25lh);
+    }
     body {
         --box-border-color: var(--background2);
         --box-rounded-radius: 8px;
@@ -62,6 +65,26 @@
     left: 50%;
     top: 1lh;
     transform: translateX(-50%);
+}
+
+#app:has(.status-line) {
+    margin-block-start: -1lh;
+}
+#app:has(.status-line)>*:last-child {
+    margin-block-end: calc(100vh - round(60vh, 1lh));
+}
+
+.status-line {
+    position: sticky;
+    top: calc(round(100%, 1lh) - 3lh);
+    box-shadow: 0 2lh 0 2lh var(--background0);
+    z-index: 100;
+
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 1ch;
+
+    background-color: var(--background1);
 }
 
 .page-header {
