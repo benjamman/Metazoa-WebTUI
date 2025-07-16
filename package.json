@@ -4,5 +4,8 @@
     "metazoa-js": "^0.0.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
+  },
+  "scripts": {
+    "run": "cd src; bun index.js"
   }
 }
