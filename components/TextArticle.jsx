@@ -5,7 +5,11 @@ function TextArticle({ article, searchTerms, shortcut="none", active=false }) {
     return <article className={ active ? "ar active" : "ar" } box-="square" shear-="both" style={{ marginBottom: "1lh" }}>
         <div className="header">
             <span is-="badge" variant-="background2">{new URL(article.href).hostname}</span>
-            <ShortcutLabel mod={shortcut[0]} bind={shortcut[1]} />
+            {/* This is a hackathon leave me alone */}
+            <span className="highlight-or-hidden">
+                <ShortcutLabel mod={shortcut[0]} bind={shortcut[1]} />
+                <ShortcutLabel mod="shift" bind={shortcut[1]} />
+            </span>
         </div>
         <header style={{
             padding: "1lh 1ch 0 1ch"
