@@ -61,6 +61,9 @@ app.get("/search", async (req, res) => {
     if (!q) {
         res.set('Content-Type', 'text/html').status(400).send(htmlTemplate(<><h1>400 Bad Request</h1><p>No query provided</p></>));
     }
+    if (q.length > 120) {
+        res.set('Content-Type', 'text/html').status(400).send(htmlTemplate(<><h1>400 Bad Request</h1><p>DoS yourself. Thank you!</p></>));
+    }
     if (q.match(/\(on engines:.+$/)) return redirect("http://localhost:3001/search",q.replace(/\(on engines:.+$/,"").trim());
     
 
