@@ -46,7 +46,7 @@ function Search({ query, articles, suggestions }) {
                 })}
             </main>
             <div>
-                <div box-="square" shear-="top">
+                {/*<div box-="square" shear-="top">
                     <div className="header">
                         <span is-="badge" variant-="background2">
                             Filters
@@ -58,7 +58,7 @@ function Search({ query, articles, suggestions }) {
                         <li is-="badge" variant-="background1">badware</li>
                         <li is-="badge" variant-="background1">+</li>
                     </ul>
-                </div>
+                </div>*/}
                 <div box-="square" shear-="top">
                     <div className="header">
                         <span is-="badge" variant-="background2">
@@ -78,7 +78,7 @@ function Search({ query, articles, suggestions }) {
                         })}
                     </ul>
                 </div>
-                <div box-="square" shear-="top">
+                {/*<div box-="square" shear-="top">
                     <div className="header">
                         <span is-="badge" variant-="background2">
                             Extra content
@@ -94,7 +94,7 @@ Lorem Ipsum is derived from a corrupted version of a Latin text by Cicero, and i
 Dummy text is often used to test fonts, layouts, and designs without the distraction of readable content. It helps designers and developers focus on the visual aspects of a page rather than the meaning of the text.
 The use of dummy text ensures that the layout and formatting can be evaluated independently of the actual content that will eventually be placed in the design.
                     </p>
-                </div>
+                </div>*/}
             </div>
         </div>
     </>;

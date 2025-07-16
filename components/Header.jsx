@@ -48,9 +48,9 @@ function Header({ query }) {
                 <li is-="badge" variant-="background0">
                     <a href="https://github.com/FusedFrameworks/metazoa-js">Metazoa</a>
                 </li>
-                <li is-="badge" variant-="background0">
+                {/*<li is-="badge" variant-="background0">
                     <a href="/settings">Settings</a>
-                </li>
+                </li>*/}
             </ul>
         </div>
         <SearchForm query={query} />
