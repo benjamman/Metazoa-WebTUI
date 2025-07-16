@@ -51,7 +51,7 @@ function moveToItem({ index, item, direction }) {
 
     activeItem.classList.remove("active");
 
-    if (index) { 
+    if (typeof index === "number") { 
         activeIndex = index; 
     }
     else if (direction) {
@@ -85,7 +85,8 @@ function clickActiveArticle() {
 
 function highlightModKey(mod, highlight = true) {
     document.querySelectorAll(`[data-mod-key="${mod}"]`).forEach(item => {
-        item.style.color = highlight ? "cornflowerblue" : "";
+        if (highlight) item.classList.add("highlight");
+        else item.classList.remove("highlight");
     });
 }
 
@@ -99,8 +100,9 @@ function focusAndSelect(inputElement, selectAll = true, range) {
     }
 }
 
-let KEY_LAYER = "default";
+let LAYER = "normal", LAYER_TYPE = "normal";
 let dataShortcuts = [];
+let nearestFocusable;
 
 
 function setupDataShortcuts() {
@@ -142,28 +144,77 @@ function modDown(mod, event) {
            (mod === "alt"   && event.altKey);
 }
 
+function getFocusableElements(container) {
+    const focusableElements = Array.from(container.querySelectorAll(
+        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+    ));
+
+    const current = document.activeElement;
+    const currentIndex = focusableElements.indexOf(current);
+
+    const currentRect = current.getBoundingClientRect();
+    
+    const aboveElements = focusableElements 
+        .map((el, idx) => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < currentRect.top && rect.right > currentRect.left && rect.left < currentRect.right) {
+                return { el, distance: (currentRect.top - rect.bottom) + Math.abs(rect.left - currentRect.left) };
+            }
+            return null;
+        })
+        .filter(Boolean)
+        .sort((a, b) => a.distance - b.distance);
+    const belowElements = focusableElements
+        .map((el, idx) => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top > currentRect.top && rect.right > currentRect.left && rect.left < currentRect.right) {
+                return { el, distance: (rect.top - currentRect.bottom) + Math.abs(rect.left - currentRect.left) };
+            }
+            return null;
+        })
+        .filter(Boolean)
+        .sort((a, b) => a.distance - b.distance);
+
+    console.log(aboveElements, belowElements)
+
+    return {
+        left: nextIndex =  focusableElements[Math.max(0, currentIndex - 1)],
+        right: nextIndex = focusableElements[Math.min(focusableElements.length - 1, currentIndex + 1)],
+        top: aboveElements?.[0]?.el || current,
+        bottom: belowElements?.[0]?.el || current
+    };
+    
+}
+
 function runActionGroup(shortcut, groupIndex) {
     shortcut.actions.groups[groupIndex].forEach(action => {
-       switch (action) {
-           case "scroll":
-               shortcut.element.scrollIntoView({ behavior: "smooth", block: "center" });
-               break;
-           case "click":
-               shortcut.element.click();
-               break;
-           case "focus":
-               shortcut.element.focus();
-               break;
-           case "selectAll":
-               focusAndSelect(shortcut.element, true);
-               break;
-           case "selectEnd":
-               focusAndSelect(shortcut.element, false);
-               break;
-           case "preventDefault":
+        switch (action) {
+            case "scroll":
+                shortcut.element.scrollIntoView({ behavior: "smooth", block: "center" });
+                break;
+            case "click":
+                shortcut.element.click();
+                break;
+            case "focus":
+                shortcut.element.focus();
+                break;
+            case "selectAll":
+                focusAndSelect(shortcut.element, true);
+                break;
+            case "selectEnd":
+                focusAndSelect(shortcut.element, false);
+                break;
+            case "sectionNavigationLayer":
+                nearestFocusable = getFocusableElements(shortcut.element);
+                nearestFocusable.left.focus();
+                nearestFocusable = getFocusableElements(shortcut.element);
+                LAYER = shortcut.element.getAttribute("data-layername");
+                LAYER_TYPE = "section-navigation";
+                break;
+            case "preventDefault":
                event.preventDefault();
                break;
-       }
+        }
     });
 
 }
@@ -172,7 +223,7 @@ function dataShortcutSystem(event) {
     // I'm allow multiple, it's a feature, not a bug
     // The reason is so I can attach a shortcut to act on multiple elements easier
     const shortcuts = dataShortcuts.filter(data => {
-        return (data.layer === "all" || data.layer === KEY_LAYER) &&
+        return (data.layer === "all" || data.layer === LAYER) &&
                (modDown(data.mod, event)) && event.key.toLowerCase() === data.bind;
     });
     shortcuts.forEach(shortcut => {
@@ -212,81 +263,132 @@ function dataShortcutSystem(event) {
 window.addEventListener("keydown", event => {
     if (event.key === "Escape") {
         // Should be handeld better when I have popovers
+        LAYER = "normal";
+        LAYER_TYPE = "normal";
         if (document.activeElement) {
             document.activeElement.blur();
             document.body.focus();
         }
+        return;
     }
     if (dataShortcutSystem(event)) return;
-    if (event.ctrlKey && (!event.shiftKey && !event.altKey)) {
-        switch (event.key) {
-            // Hardcoded for performance, maybe
-            // Realistically it's inconsequential
-            case "1":
-                moveToItem({ index: 0 });
-                clickActiveArticle();
-                break;
-            case "2":
-                moveToItem({ index: 1 });
-                clickActiveArticle();
-                break;
-            case "3":
-                moveToItem({ index: 2 });
-                clickActiveArticle();
-                break;
-            case "4":
-                moveToItem({ index: 3 });
-                clickActiveArticle();
-                break;
-            case "5":
-                moveToItem({ index: 4 });
-                clickActiveArticle();
-                break;
-            case "6":
-                moveToItem({ index: 5 });
-                clickActiveArticle();
-                break;
-            case "7":
-                moveToItem({ index: 6 });
-                clickActiveArticle();
-                break;
-            case "8":
-                moveToItem({ index: 7 });
-                clickActiveArticle();
-                break;
-            case "9":
-                moveToItem({ index: 8 });
-                clickActiveArticle();
-                break;
-            case "0":
-                moveToItem({ index: 9 });
-                clickActiveArticle();
-                break;
-        }
-        highlightModKey("ctrl");
-    }
-    if (event.shiftKey && (!event.ctrlKey && !event.altKey)) {
-        if (event.key) {}
-        highlightModKey("shift");
-    }
-    if (event.altKey && (!event.ctrlKey && !event.shiftKey)) {
-        if (event.key) {}
-        highlightModKey("alt");
-    }
-    switch (KEY_LAYER) {
-        default:
+    if (LAYER === "normal" && window.location.pathname === "/search") {
+        if (event.ctrlKey && (!event.shiftKey && !event.altKey)) {
             switch (event.key) {
-                case "j":
-                    moveToItem({ direction: "down" });
+                // Hardcoded for performance, maybe
+                // Realistically it's inconsequential
+                case "1":
+                    moveToItem({ index: 0 });
+                    clickActiveArticle();
                     break;
-                case "k":
-                    moveToItem({ direction: "up" });
+                case "2":
+                    moveToItem({ index: 1 });
+                    clickActiveArticle();
                     break;
-                case "Enter":
+                case "3":
+                    moveToItem({ index: 2 });
+                    clickActiveArticle();
+                    break;
+                case "4":
+                    moveToItem({ index: 3 });
+                    clickActiveArticle();
+                    break;
+                case "5":
+                    moveToItem({ index: 4 });
+                    clickActiveArticle();
+                    break;
+                case "6":
+                    moveToItem({ index: 5 });
+                    clickActiveArticle();
+                    break;
+                case "7":
+                    moveToItem({ index: 6 });
+                    clickActiveArticle();
+                    break;
+                case "8":
+                    moveToItem({ index: 7 });
+                    clickActiveArticle();
+                    break;
+                case "9":
+                    moveToItem({ index: 8 });
+                    clickActiveArticle();
+                    break;
+                case "0":
+                    moveToItem({ index: 9 });
                     clickActiveArticle();
                     break;
             }
-            break;
+            highlightModKey("ctrl");
+        }
+        if (event.shiftKey && (!event.ctrlKey && !event.altKey)) {
+            switch (event.key) {
+                // Hardcoded for performance, maybe
+                // Realistically it's inconsequential
+                case "!":
+                    moveToItem({ index: 0 });
+                    break;
+                case "@":
+                    moveToItem({ index: 1 });
+                    break;
+                case "#":
+                    moveToItem({ index: 2 });
+                    break;
+                case "$":
+                    moveToItem({ index: 3 });
+                    break;
+                case "%":
+                    moveToItem({ index: 4 });
+                    break;
+                case "^":
+                    moveToItem({ index: 5 });
+                    break;
+                case "&":
+                    moveToItem({ index: 6 });
+                    break;
+                case "*":
+                    moveToItem({ index: 7 });
+                    break;
+                case "(":
+                    moveToItem({ index: 8 });
+                    break;
+                case ")":
+                    moveToItem({ index: 9 });
+                    break;
+            }
+            highlightModKey("shift");
+        }
+        switch (event.key) {
+            case "j":
+                moveToItem({ direction: "down" });
+                break;
+            case "k":
+                moveToItem({ direction: "up" });
+                break;
+            case "Enter":
+                clickActiveArticle();
+                break;
+        }
+        return;
+    }
+    if (LAYER_TYPE === "section-navigation") {
+        switch (event.key) {
+            case "h":
+                nearestFocusable.left.focus();
+                nearestFocusable = getFocusableElements(document.querySelector(`[data-layername="${LAYER}"]`));
+                break;
+            case "l":
+                nearestFocusable.right.focus();
+                nearestFocusable = getFocusableElements(document.querySelector(`[data-layername="${LAYER}"]`));
+                break;          
+            case "j":
+                nearestFocusable.bottom.focus();
+                nearestFocusable = getFocusableElements(document.querySelector(`[data-layername="${LAYER}"]`));
+                break;
+            case "k":
+                nearestFocusable.top.focus();
+                nearestFocusable = getFocusableElements(document.querySelector(`[data-layername="${LAYER}"]`));
+                break;
+        }
     }
 });
 
