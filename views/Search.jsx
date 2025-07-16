@@ -1,46 +1,12 @@
-import SearchForm from "../components/SearchForm";
+import Header from "../components/Header";
 import TextArticle from "../components/TextArticle";
 import ShortcutLabel from "../components//ShortcutLabel";
 
 function Search({ query, articles, suggestions }) {
     const searchTerms = query.split(/\s/);
     return <>
-        <header className="page-header">
-<pre className="logo-mini" title="Logo">
-  {`  _ _     _____  —–
- //\\/\\etazoa|||U|||
-/\``}
-  <span style={{ color: '#fff2' }} title="We are number one!">slueth #1</span>
-  {` L|\`-'–—`}
-</pre>
-            <div box-="square" shear-="top">
-                <div className="header">
-                    <span is-="badge" variant-="background2">
-                        About 
-                    </span>
-                    <ShortcutLabel mod="shift" bind="1-5" />
-                </div>
-                <ul>
-                    <li is-="badge" variant-="background0">
-                        <a href="/">Home</a>
-                    </li>
-                    <li is-="badge" variant-="background0">
-                        <a href="https://github.com/benjamman/metazoa-webtui">Github</a>
-                    </li>
-                    <li is-="badge" variant-="background0">
-                        <a href="https://github.com/webtui/webtui">WebTUI</a>
-                    </li>
-                    <li is-="badge" variant-="background0">
-                        <a href="https://github.com/FusedFrameworks/metazoa-js">Metazoa</a>
-                    </li>
-                    <li is-="badge" variant-="background0">
-                        <a href="/settings">Settings</a>
-                    </li>
-                </ul>
-            </div>
-            <SearchForm query={query} />
-        </header>
-        <div className="page-columns">
+            <Header query={query} />
+            <div className="page-columns">
             <main id="main">
                 <header box-="square" shear-="top">
                     <div className="header">
@@ -49,7 +15,7 @@ function Search({ query, articles, suggestions }) {
                         </span>
                         <ShortcutLabel mod="shift" bind="t" />
                     </div>
-                    <ul>
+                    <ul data-layername="toolbar" data-shortcut={`all,shift,t,sectionNavigationLayer`}>
                         <li is-="badge" variant-="background0">
                             <a href="/">Web</a>
                         </li>
@@ -100,7 +66,7 @@ function Search({ query, articles, suggestions }) {
                         </span>
                         <ShortcutLabel mod="shift" bind="s" />
                     </div>
-                    <ul className="suggestions-box flexy-badges">
+                    <ul className="suggestions-box flexy-badges" data-layername="suggestions-box" data-shortcut={`all,shift,s,sectionNavigationLayer`}>
                         {suggestions.map((suggestion, index) => {
                             const visibleSuggestion = suggestion.q.replace(query, '');
                             if (visibleSuggestion.length > 32) return;
