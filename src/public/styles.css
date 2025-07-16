@@ -2,6 +2,15 @@
 
 @import "https://cdn.jsdelivr.net/npm/@webtui/css@0.1.4/dist/full.css";
 
+@keyframes blink {
+    from { opacity: 1; }
+    20% { opacity: 1; }
+    28% { opacity: 1; }
+    72% { opacity: 1; }
+    80% { opacity: 0; }
+    to { opacity: 0; }
+}
+
 @layer base {
     :root {
         background-color: var(--background0);
@@ -39,13 +48,28 @@
     }
     a {
         color: cornflowerblue;
+        position: relative;
     }
     a:visited {
         color: lightblue;
     }
-    a:focus {
-        outline: 2px solid cornflowerblue;
-        outline-offset: 0.65ch;
+    /* a:focus { */
+    /*     outline: 2px solid cornflowerblue; */
+    /*     outline-offset: 0.65ch; */
+    /* } */
+    a:focus::before {
+        position: absolute;
+        right: 100%;
+        content: '> ';
+        background-color: var(--background0);
+        animation: blink 1.8s linear infinite alternate;
+    }
+    a:focus::after {
+        position: absolute;
+        left: 100%;
+        content: ' <';
+        background-color: var(--background0);
+        animation: blink 1.8s linear infinite alternate;
     }
     [box-]:hover {
         --box-border-color: var(--foreground2);
@@ -94,6 +118,11 @@
 }
 .layout1 .page-header {
     grid-template-columns: 1fr;
+}
+
+.page-footer {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .logo-mini {
