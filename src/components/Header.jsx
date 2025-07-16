@@ -7,7 +7,7 @@ function Header({ query }) {
             <pre className="logo-mini">
             <span style={{ color: '#6495ED' }}>{`  _ _    `}</span>
             {`  `}
-            <span style={{ color: '#8A2BE2' }}>{`_____`}</span>
+            <span style={{ color: '#9932CC' }}>{`_____`}</span>
             {`  `}
             <span style={{ color: '#9932CC' }}>{`—–`}</span>
             {`\n `}
