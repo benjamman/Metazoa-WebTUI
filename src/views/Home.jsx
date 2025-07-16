@@ -9,7 +9,7 @@ function Home() {
         <h1>Welcome!</h1>
         <p>This is a WebTUI client for Metazoa, a WIP meta engine library.</p>
         <br />
-        <p>Please contact me if shortcuts mis-behave. I've been told of issues that I can't seem to reproduce, if you do contact me, please include steps to reproduce and if there's errors also the console output. Thank you!</p>
+        <p>Please contact me if shortcuts mis-behave. They do sometimes visibly stick, that's fine for now, it's a bug but only cosmetic. I've been told of issues that I can't seem to reproduce, if you do contact me, please include steps to reproduce and if there's errors also the console output. Thank you!</p>
         <br />
         <p>
             Mostly functional. There is some cosmetic imperfections and probably unhandled errors.
@@ -25,6 +25,9 @@ function Home() {
             <span>^ These two are essential. Both require a Metazoa patch.</span>
             <li>Bug report section</li>
             <li>Footer component</li>
+            <li>Fix shortcut labels on {'<'}TextArticle/{'>'}. Why do they look like that??</li>
+            <li>Fix focus bug when typing in search</li>
+            <span>^ If you click the search bar <i>*pfft using the mouse*</i> then press <ShortcutLabel bind="a"/>, for example, it will remove focus from the search bar because they layer was never set. I should add a way to use [data-trigger-shortcut="onclick,focus search"] and then name shortcuts e.g. "focus search".</span>
             <li>Don't highlihgt shortcuts from other layers</li>
             <li>Better anchoer highlight</li>
             <li>Filters (safesearch)</li>
@@ -34,7 +37,10 @@ function Home() {
             <li>Settings</li>
             <li>Backgrounds</li>
             <span>^ Very important if you don't have your anime wallpaer what are you doing??</span>
+            <li>A little boot animation when you load the page. It would cover up the visual content shift.</li>
             <li>Docs/Wiki</li>
+            <li>Warn on weird searches</li>
+            <span>^ What I mean is when someone spells "mario" with a million 'a's. It's wasted bandwidth, and so before searching it should popover with "Hey! Your search query seems sub-optimal. Would you like us to help with that?" and fixup spelling and term optimization. Like don't do this all the time, that would be more obnoxious. But just when extreme, or on hotkey press.</span>
             <li>More search params</li>
             <span>^ Implement in Metazoa. So much work to be done.</span>
             <li>Single key shortcuts with the same bind as a shortcut with a mod</li>
