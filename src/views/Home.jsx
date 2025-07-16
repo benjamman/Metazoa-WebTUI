@@ -1,4 +1,5 @@
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import ShortcutLabel from "../components/ShortcutLabel";
 import StatusLine from "../components/StatusLine";
 
@@ -58,22 +59,7 @@ function Home() {
             <span>^ Algorithm needs to check for shortcuts with a mod and bind first and cancel single key immediately.</span>
         </ul>
         <br/>
-        <div box-="square" shear-="top" style={{ width: "36ch" }}>
-            <span className="header">
-                <span is-="badge" variant-="background2">Contact</span>
-                <ShortcutLabel mod="shift" bind="c" />
-            </span>
-            <address style={{ padding: "1lh 1ch" }} data-layername="contact" data-shortcut={`normal,shift,c,sectionNavigationLayer`}>
-                Ben {'<'}<a href="mailto:benjamman@proton.me">benjamman@proton.me</a>{'>'} 
-                <br /><br />
-                GitHub:{' '}
-                <span is-="badge" variant-="background1"><a href="https://github.com/benjamman">benjamman</a></span>
-                {','}
-                <span is-="badge" variant-="background1"><a href="https://github.com/shipment22">shipment22</a></span>
-                <br /><br />
-                Discord: <span is-="badge" variant-="background1">shipment22</span> 
-            </address>
-        </div>
+        <Footer />
     </>;
 }
 

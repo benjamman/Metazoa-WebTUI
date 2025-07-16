@@ -1,4 +1,5 @@
 import Header from "../components/Header";
+import Footer from "../components/Footer"
 import StatusLine from "../components/StatusLine";
 import TextArticle from "../components/TextArticle";
 import ShortcutLabel from "../components//ShortcutLabel";
@@ -99,6 +100,7 @@ The use of dummy text ensures that the layout and formatting can be evaluated in
                 </div>*/}
             </div>
         </div>
+        <Footer />
     </>;
 }
 
