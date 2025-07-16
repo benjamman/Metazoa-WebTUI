@@ -1,0 +1,787 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1;">
+  <meta name="referrer" content="origin">
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>family guys at DuckDuckGo</title>
+  <link title="DuckDuckGo (Lite)" type="application/opensearchdescription+xml" rel="search" href="//duckduckgo.com/opensearch_lite_v2.xml">
+  <link href="//duckduckgo.com/favicon.ico" rel="shortcut icon" />
+  <link rel="icon" href="//duckduckgo.com/favicon.ico" type="image/x-icon" />
+  <link id="icon60" rel="apple-touch-icon" href="//duckduckgo.com/assets/icons/meta/DDG-iOS-icon_60x60.png?v=2"/>
+  <link id="icon76" rel="apple-touch-icon" sizes="76x76" href="//duckduckgo.com/assets/icons/meta/DDG-iOS-icon_76x76.png?v=2"/>
+  <link id="icon120" rel="apple-touch-icon" sizes="120x120" href="//duckduckgo.com/assets/icons/meta/DDG-iOS-icon_120x120.png?v=2"/>
+  <link id="icon152" rel="apple-touch-icon" sizes="152x152" href="//duckduckgo.com/assets/icons/meta/DDG-iOS-icon_152x152.png?v=2"/>
+  <link rel="image_src" href="//duckduckgo.com/assets/icons/meta/DDG-icon_256x256.png">
+  <link rel="stylesheet" media="handheld, all" href="//duckduckgo.com/dist/lr.1cd17d60d7411155ecc4.css" type="text/css"/>
+</head>
+
+<body>
+<p class='extra'>&nbsp;</p>
+<div class="header">DuckDuckGo</div>
+<p class='extra'>&nbsp;</p>
+
+<form action="/lite/" method="post">
+  <input class='query' type="text" size="40" name="q" value="family guys" >
+  <input class='submit' type="submit" value="Search" >
+
+
+
+
+
+<div class="filters">
+
+<select class="submit" name="kl">
+
+  <option value="" >All Regions</option>
+
+  <option value="ar-es" >Argentina</option>
+
+  <option value="au-en" >Australia</option>
+
+  <option value="at-de" >Austria</option>
+
+  <option value="be-fr" >Belgium (fr)</option>
+
+  <option value="be-nl" >Belgium (nl)</option>
+
+  <option value="br-pt" >Brazil</option>
+
+  <option value="bg-bg" >Bulgaria</option>
+
+  <option value="ca-en" >Canada (en)</option>
+
+  <option value="ca-fr" >Canada (fr)</option>
+
+  <option value="ct-ca" >Catalonia</option>
+
+  <option value="cl-es" >Chile</option>
+
+  <option value="cn-zh" >China</option>
+
+  <option value="co-es" >Colombia</option>
+
+  <option value="hr-hr" >Croatia</option>
+
+  <option value="cz-cs" >Czech Republic</option>
+
+  <option value="dk-da" >Denmark</option>
+
+  <option value="ee-et" >Estonia</option>
+
+  <option value="fi-fi" >Finland</option>
+
+  <option value="fr-fr" >France</option>
+
+  <option value="de-de" >Germany</option>
+
+  <option value="gr-el" >Greece</option>
+
+  <option value="hk-tzh" >Hong Kong</option>
+
+  <option value="hu-hu" >Hungary</option>
+
+  <option value="is-is" >Iceland</option>
+
+  <option value="in-en" >India (en)</option>
+
+  <option value="id-en" >Indonesia (en)</option>
+
+  <option value="ie-en" >Ireland</option>
+
+  <option value="il-en" >Israel (en)</option>
+
+  <option value="it-it" >Italy</option>
+
+  <option value="jp-jp" >Japan</option>
+
+  <option value="kr-kr" >Korea</option>
+
+  <option value="lv-lv" >Latvia</option>
+
+  <option value="lt-lt" >Lithuania</option>
+
+  <option value="my-en" >Malaysia (en)</option>
+
+  <option value="mx-es" >Mexico</option>
+
+  <option value="nl-nl" >Netherlands</option>
+
+  <option value="nz-en" >New Zealand</option>
+
+  <option value="no-no" >Norway</option>
+
+  <option value="pk-en" >Pakistan (en)</option>
+
+  <option value="pe-es" >Peru</option>
+
+  <option value="ph-en" >Philippines (en)</option>
+
+  <option value="pl-pl" >Poland</option>
+
+  <option value="pt-pt" >Portugal</option>
+
+  <option value="ro-ro" >Romania</option>
+
+  <option value="ru-ru" >Russia</option>
+
+  <option value="xa-ar" >Saudi Arabia</option>
+
+  <option value="sg-en" >Singapore</option>
+
+  <option value="sk-sk" >Slovakia</option>
+
+  <option value="sl-sl" >Slovenia</option>
+
+  <option value="za-en" >South Africa</option>
+
+  <option value="es-ca" >Spain (ca)</option>
+
+  <option value="es-es" >Spain (es)</option>
+
+  <option value="se-sv" >Sweden</option>
+
+  <option value="ch-de" >Switzerland (de)</option>
+
+  <option value="ch-fr" >Switzerland (fr)</option>
+
+  <option value="tw-tzh" >Taiwan</option>
+
+  <option value="th-en" >Thailand (en)</option>
+
+  <option value="tr-tr" >Turkey</option>
+
+  <option value="us-en" >US (English)</option>
+
+  <option value="us-es" >US (Spanish)</option>
+
+  <option value="ua-uk" >Ukraine</option>
+
+  <option value="uk-en" >United Kingdom</option>
+
+  <option value="vn-en" >Vietnam (en)</option>
+
+</select>
+
+<select class="submit" name="df">
+
+  <option value="" selected>Any Time</option>
+
+  <option value="d" >Past Day</option>
+
+  <option value="w" >Past Week</option>
+
+  <option value="m" >Past Month</option>
+
+  <option value="y" >Past Year</option>
+
+</select>
+
+</form>
+
+
+  <p class="extra">&nbsp;</p>
+    <table border="0"><tr>
+    <td>
+      
+    </td>
+    <td>
+      
+        <form action="/lite/" method="post">
+          <!-- <a rel="next" href="/lite/?q=family+guys&amp;t=A&amp;v=l&amp;l=us-en&amp;p=&amp;s=10&amp;ex=-1&amp;o=json&amp;dl=en&amp;ct=US&amp;sp=0&amp;vqd=4-109873236453104304828016646115235656032&amp;bing_market=en-US&amp;host_region=use&amp;dp=PcgjQM25OAIJo9Yp5S1DNJrqa_XemsU0qY5F3lM-whAahlZsU4UDtCUz3xGjYXfct2tJnpDQeInyDAP_c4X8ALLohfCCae2qQpw4b9JcAL2np7zdZM3JF_cUkVLg3x2T.2oqM-CzfRzfbcw_0P6mM-w&amp;dc=12&amp;api=%2Fd.js">Next Page &gt;</a> //-->
+          <input type="submit" class='navbutton' value="Next Page &gt;">
+          <input type="hidden" name="q" value="family guys">
+          <input type="hidden" name="s" value="10">
+          <input type="hidden" name="nextParams" value="">
+          <input type="hidden" name="v" value="l">
+          <input type="hidden" name="o" value="json">
+          <input type="hidden" name="dc" value="12">
+          <input type="hidden" name="api" value="d.js">
+          <input type="hidden" name="vqd" value="4-109873236453104304828016646115235656032">
+          
+          
+          
+          <input name="kl" value="wt-wt" type="hidden">
+          
+          
+          
+          
+        </form>
+      
+    </td>
+    </tr></table>
+
+
+
+
+<p class='extra'>&nbsp;</p>
+
+<table border="0">
+
+<!-- If zero click results are present -->
+
+  <tr>
+    <td>Zero-click info: <a rel="nofollow" href="https://en.wikipedia.org/wiki/Family_Guy">Family Guy</a></td>
+  </tr>
+
+  <tr>
+    <td>
+      Family Guy is an American animated sitcom created by Seth MacFarlane for the Fox Broadcasting Company. The series premiered on January 31, 1999, following Super Bowl XXXIII, with the rest of the first season airing from April 11, 1999. The show centers around the Griffins, a dysfunctional family consisting of parents Peter and Lois, their children, Meg, Chris, and Stewie, and their anthropomorphic pet dog, Brian.
+      
+        <a rel="nofollow" href="https://en.wikipedia.org/wiki/Family_Guy">More at <q>Wikipedia</q></a>
+      
+    </td>
+  </tr>
+
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+
+
+</table>
+
+<table border="0">
+
+<!-- Web results are present -->
+
+
+
+
+
+ <tr>
+
+    <td valign="top">1.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.fox.com%2Ffamilyguy%2F&amp;rut=b2a2a4f0f603ada3bb920fd9f4a26404d19f7f26c2d036f7fddf1589bcd46415" class='result-link'>Official site</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      Family Guy
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>www.fox.com</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">2.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.fox.com%2Ffamily%2Dguy%2F&amp;rut=b0048159e8833273d37f56f82015f7c2c02cc2b70fb51a57caf47c543d7bc1f2" class='result-link'>Family Guy - Watch on FOX</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      The adventures of an eccentric <b>family</b> living in New England.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>www.fox.com/family-guy/</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">3.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.justwatch.com%2Fus%2Ftv%2Dshow%2Ffamily%2Dguy&amp;rut=cc01db3cbd1ecafed6ae7ac5ffc9f439e06570b5046998b26c72d66cb523c868" class='result-link'>Family Guy - watch tv show streaming online</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      Find out how and where to watch &quot;<b>Family</b> <b>Guy</b>&quot; online on Netflix, Prime Video, and Disney+ today - including 4K and free options.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>www.justwatch.com/us/tv-show/family-guy</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">4.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt0182576%2F&amp;rut=9ee2c6261e60d5cc1884c389adb6db90682bf2cbdc60ab92d35ad15630d2f99c" class='result-link'>Family Guy (TV Series 1999- ) - IMDb</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      <b>Family</b> <b>Guy</b>: Created by Seth MacFarlane, David Zuckerman. With Seth MacFarlane, Alex Borstein, Seth Green, Mila Kunis. In a wacky Rhode Island town, a dysfunctional <b>family</b> strives to cope with everyday life as they are thrown from one crazy scenario to another.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>www.imdb.com/title/tt0182576/</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">5.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFamily_Guy&amp;rut=9b1490a8e7b6e4753080442a89f68a58991706dc0793e45fa0735b6f788911c6" class='result-link'>Family Guy - Wikipedia</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      <b>Family</b> <b>Guy</b> is an American animated sitcom created by Seth MacFarlane for the Fox Broadcasting Company. The series premiered on January 31, 1999, following Super Bowl XXXIII, with the rest of the first season airing from April 11, 1999. The show centers around the Griffins, a dysfunctional <b>family</b> consisting of parents Peter and Lois, their children, Meg, Chris, and Stewie, and their ...
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>en.wikipedia.org/wiki/Family_Guy</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">6.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUC7fZ%2DQNFi7amcOncIl6owxA&amp;rut=1c82a5ac34bbef6624696f28187b2fbdd8f01a72ed79c615e9b13ca49d3c7e51" class='result-link'>Family Guy - YouTube</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      About: <b>Family</b> <b>Guy</b> continues to entertain its die-hard fan base with razor-sharp humor, spot-on parodies, spectacular animation and orchestra-backed original music. Since its debut, the series has ...
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>www.youtube.com/channel/UC7fZ-QNFi7amcOncIl6owxA</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">7.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ffamilyguy.fandom.com%2Fwiki%2FMain_Page&amp;rut=1393fc015e70a4b8838b711d9a39fb2e96dd7881a4c39ee92f8f876754388ba2" class='result-link'>Family Guy Wiki | Fandom</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      Welcome to the <b>Family</b> <b>Guy</b> Wiki, an encyclopedia of all things presented in the television showFamily <b>Guy</b>. This site uses MediaWiki software, which allows any user to edit or create pages.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>familyguy.fandom.com/wiki/Main_Page</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">8.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.netflix.com%2Ftitle%2F70153382&amp;rut=db9a504cfc5e1777b164f65b2457e93a327101f323d50ca55321c21d50628c3b" class='result-link'>Watch Family Guy | Netflix</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      In Seth MacFarlane&#x27;s no-holds-barred animated show, buffoonish Peter Griffin and his dysfunctional <b>family</b> experience wacky misadventures. Watch trailers &amp; learn more.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>www.netflix.com/title/70153382</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">9.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fabc.com%2Fshow%2F0757b630%2Dd1e3%2D4069%2D9237%2D4905a9848247%2Fseason%2F21&amp;rut=867959de7d57bfd0326541020c5345369ff58f1166f03df885085040547d2fd6" class='result-link'>Family Guy Full Episodes | Watch Online - ABC.com</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      Browse the list of <b>Family</b> <b>Guy</b> episodes and watch full episodes streaming online.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>abc.com/show/0757b630-d1e3-4069-9237-4905a9848247/season/21</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">10.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.tvinsider.com%2F1189357%2Ffamily%2Dguy%2Dseason%2D24%2Dpremiere%2Ddate%2Dcast%2Dtrailer%2F&amp;rut=ed0408b7152889e24dc4bd412f725dc882ce6add76dfad116aa2ab95c0efe62e" class='result-link'>&#x27;Family Guy&#x27; Season 24: Premiere Date, Cast, Trailer, More</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      <b>Family</b> <b>Guy</b> is one of the four Fox animated shows that got a multi-season renewal, along with The Simpsons, Bob&#x27;s Burgers, and American Dad. Read on for everything we know about Season 24.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>www.tvinsider.com/1189357/family-guy-season-24-premiere-date-cast-trailer/</span>
+      
+        &nbsp;&nbsp;&nbsp;<span class='timestamp'>2025-04-30T00:00:00.0000000
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">11.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.hotstar.com%2Fin%2Fshows%2Ffamily%2Dguy%2F1260024995&amp;rut=ac5275866bb4594a2d05e56073825b1909c78cdb1ab9d47715bf4a74565b1c73" class='result-link'>Family Guy - JioHotstar</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      In a wacky Rhode Island town, buffoonish Peter Griffin and his <b>family</b> strive to cope with everyday life as they are thrown from one crazy scenario to another. Watch <b>Family</b> <b>Guy</b> - English Comedy Animation serial on JioHotstar now.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>www.hotstar.com/in/shows/family-guy/1260024995</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+  
+    <tr>
+    <td colspan=2>
+      
+      
+        <form class="next_form" action="/lite/" method="post">
+          <!-- <a rel="next" href="/lite/?q=family+guys&amp;t=A&amp;v=l&amp;l=us-en&amp;p=&amp;s=10&amp;ex=-1&amp;o=json&amp;dl=en&amp;ct=US&amp;sp=0&amp;vqd=4-109873236453104304828016646115235656032&amp;bing_market=en-US&amp;host_region=use&amp;dp=PcgjQM25OAIJo9Yp5S1DNJrqa_XemsU0qY5F3lM-whAahlZsU4UDtCUz3xGjYXfct2tJnpDQeInyDAP_c4X8ALLohfCCae2qQpw4b9JcAL2np7zdZM3JF_cUkVLg3x2T.2oqM-CzfRzfbcw_0P6mM-w&amp;dc=12&amp;api=%2Fd.js">Next Page &gt;</a> //-->
+          <input type="submit" class='navbutton' value="Next Page &gt;">
+          <input type="hidden" name="q" value="family guys">
+          <input type="hidden" name="s" value="10">
+          <input type="hidden" name="nextParams" value="">
+          <input type="hidden" name="v" value="l">
+          <input type="hidden" name="o" value="json">
+          <input type="hidden" name="dc" value="12">
+          <input type="hidden" name="api" value="d.js">
+          <input type="hidden" name="vqd" value="4-109873236453104304828016646115235656032">
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          
+          
+          
+          <input name="kl" value="wt-wt" type="hidden">
+          
+          
+          
+          
+        </form>
+      
+      
+    </td>
+  </tr>
+
+</table>
+
+<p class='extra'>&nbsp;</p>
+
+<form action="/lite/" method="post">
+  <input class='query' type="text" size="40" name="q" value="family guys" >
+  <input class='submit' type="submit" value="Search" >
+
+
+
+
+
+  <input name="kl" value="wt-wt" type="hidden">
+
+</form>
+
+<p class='extra'>&nbsp;</p>
+
+<!--
+<a href="#top">Top</a>
+//-->
+
+
+  <img src="//duckduckgo.com/t/sl_l"/>
+
+<div id='end-spacer'>&nbsp;</div>
+
+</body>
+</html>

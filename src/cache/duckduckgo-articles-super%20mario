@@ -1,0 +1,820 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1;">
+  <meta name="referrer" content="origin">
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>super marios at DuckDuckGo</title>
+  <link title="DuckDuckGo (Lite)" type="application/opensearchdescription+xml" rel="search" href="//duckduckgo.com/opensearch_lite_v2.xml">
+  <link href="//duckduckgo.com/favicon.ico" rel="shortcut icon" />
+  <link rel="icon" href="//duckduckgo.com/favicon.ico" type="image/x-icon" />
+  <link id="icon60" rel="apple-touch-icon" href="//duckduckgo.com/assets/icons/meta/DDG-iOS-icon_60x60.png?v=2"/>
+  <link id="icon76" rel="apple-touch-icon" sizes="76x76" href="//duckduckgo.com/assets/icons/meta/DDG-iOS-icon_76x76.png?v=2"/>
+  <link id="icon120" rel="apple-touch-icon" sizes="120x120" href="//duckduckgo.com/assets/icons/meta/DDG-iOS-icon_120x120.png?v=2"/>
+  <link id="icon152" rel="apple-touch-icon" sizes="152x152" href="//duckduckgo.com/assets/icons/meta/DDG-iOS-icon_152x152.png?v=2"/>
+  <link rel="image_src" href="//duckduckgo.com/assets/icons/meta/DDG-icon_256x256.png">
+  <link rel="stylesheet" media="handheld, all" href="//duckduckgo.com/dist/lr.1cd17d60d7411155ecc4.css" type="text/css"/>
+</head>
+
+<body>
+<p class='extra'>&nbsp;</p>
+<div class="header">DuckDuckGo</div>
+<p class='extra'>&nbsp;</p>
+
+<form action="/lite/" method="post">
+  <input class='query' type="text" size="40" name="q" value="super marios" >
+  <input class='submit' type="submit" value="Search" >
+
+
+
+
+
+<div class="filters">
+
+<select class="submit" name="kl">
+
+  <option value="" >All Regions</option>
+
+  <option value="ar-es" >Argentina</option>
+
+  <option value="au-en" >Australia</option>
+
+  <option value="at-de" >Austria</option>
+
+  <option value="be-fr" >Belgium (fr)</option>
+
+  <option value="be-nl" >Belgium (nl)</option>
+
+  <option value="br-pt" >Brazil</option>
+
+  <option value="bg-bg" >Bulgaria</option>
+
+  <option value="ca-en" >Canada (en)</option>
+
+  <option value="ca-fr" >Canada (fr)</option>
+
+  <option value="ct-ca" >Catalonia</option>
+
+  <option value="cl-es" >Chile</option>
+
+  <option value="cn-zh" >China</option>
+
+  <option value="co-es" >Colombia</option>
+
+  <option value="hr-hr" >Croatia</option>
+
+  <option value="cz-cs" >Czech Republic</option>
+
+  <option value="dk-da" >Denmark</option>
+
+  <option value="ee-et" >Estonia</option>
+
+  <option value="fi-fi" >Finland</option>
+
+  <option value="fr-fr" >France</option>
+
+  <option value="de-de" >Germany</option>
+
+  <option value="gr-el" >Greece</option>
+
+  <option value="hk-tzh" >Hong Kong</option>
+
+  <option value="hu-hu" >Hungary</option>
+
+  <option value="is-is" >Iceland</option>
+
+  <option value="in-en" >India (en)</option>
+
+  <option value="id-en" >Indonesia (en)</option>
+
+  <option value="ie-en" >Ireland</option>
+
+  <option value="il-en" >Israel (en)</option>
+
+  <option value="it-it" >Italy</option>
+
+  <option value="jp-jp" >Japan</option>
+
+  <option value="kr-kr" >Korea</option>
+
+  <option value="lv-lv" >Latvia</option>
+
+  <option value="lt-lt" >Lithuania</option>
+
+  <option value="my-en" >Malaysia (en)</option>
+
+  <option value="mx-es" >Mexico</option>
+
+  <option value="nl-nl" >Netherlands</option>
+
+  <option value="nz-en" >New Zealand</option>
+
+  <option value="no-no" >Norway</option>
+
+  <option value="pk-en" >Pakistan (en)</option>
+
+  <option value="pe-es" >Peru</option>
+
+  <option value="ph-en" >Philippines (en)</option>
+
+  <option value="pl-pl" >Poland</option>
+
+  <option value="pt-pt" >Portugal</option>
+
+  <option value="ro-ro" >Romania</option>
+
+  <option value="ru-ru" >Russia</option>
+
+  <option value="xa-ar" >Saudi Arabia</option>
+
+  <option value="sg-en" >Singapore</option>
+
+  <option value="sk-sk" >Slovakia</option>
+
+  <option value="sl-sl" >Slovenia</option>
+
+  <option value="za-en" >South Africa</option>
+
+  <option value="es-ca" >Spain (ca)</option>
+
+  <option value="es-es" >Spain (es)</option>
+
+  <option value="se-sv" >Sweden</option>
+
+  <option value="ch-de" >Switzerland (de)</option>
+
+  <option value="ch-fr" >Switzerland (fr)</option>
+
+  <option value="tw-tzh" >Taiwan</option>
+
+  <option value="th-en" >Thailand (en)</option>
+
+  <option value="tr-tr" >Turkey</option>
+
+  <option value="us-en" >US (English)</option>
+
+  <option value="us-es" >US (Spanish)</option>
+
+  <option value="ua-uk" >Ukraine</option>
+
+  <option value="uk-en" >United Kingdom</option>
+
+  <option value="vn-en" >Vietnam (en)</option>
+
+</select>
+
+<select class="submit" name="df">
+
+  <option value="" selected>Any Time</option>
+
+  <option value="d" >Past Day</option>
+
+  <option value="w" >Past Week</option>
+
+  <option value="m" >Past Month</option>
+
+  <option value="y" >Past Year</option>
+
+</select>
+
+</form>
+
+
+  <p class="extra">&nbsp;</p>
+    <table border="0"><tr>
+    <td>
+      
+    </td>
+    <td>
+      
+        <form action="/lite/" method="post">
+          <!-- <a rel="next" href="/lite/?q=super+marios&amp;v=l&amp;l=us-en&amp;p=&amp;s=10&amp;ex=-1&amp;o=json&amp;dl=en&amp;ct=US&amp;sp=0&amp;vqd=4-259546836724608603286489099771696031144&amp;bing_market=en-US&amp;host_region=use&amp;dp=rMW3PkalE1ONWAXydK0_wYSMKS1uiCKorLfBaoPcBq64rDqS_kidhSEOer7o45zmJn3ZW2B-VwQJ0d2hf67MVyAYt4F0F9HK-0y6ARx8BsjZD1cEe0O1akfFNDgZeMX5.TyXuccRQL0aViBJBN07Tbg&amp;dc=13&amp;api=%2Fd.js">Next Page &gt;</a> //-->
+          <input type="submit" class='navbutton' value="Next Page &gt;">
+          <input type="hidden" name="q" value="super marios">
+          <input type="hidden" name="s" value="10">
+          <input type="hidden" name="nextParams" value="">
+          <input type="hidden" name="v" value="l">
+          <input type="hidden" name="o" value="json">
+          <input type="hidden" name="dc" value="13">
+          <input type="hidden" name="api" value="d.js">
+          <input type="hidden" name="vqd" value="4-259546836724608603286489099771696031144">
+          
+          
+          
+          <input name="kl" value="wt-wt" type="hidden">
+          
+          
+          
+          
+        </form>
+      
+    </td>
+    </tr></table>
+
+
+
+
+<p class='extra'>&nbsp;</p>
+
+<table border="0">
+
+</table>
+
+<table border="0">
+
+<!-- Web results are present -->
+
+
+
+
+ 
+
+ <tr class="result-sponsored">
+
+    <td valign="top">1.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Ddell.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DGUzJ%252D0s1Cn8K4VjhkI2iNiIOg_28LfU6AGTBqFZbmQ2ZiipJpR4wCuIW8GmgT4VvglNvArDBmux1768_iTcMUPNcBx_h%252Db8ftvwy5n4xK6Z4spNKF6Hxi3u1qBUU1%252DTi.tfqzbw2YiLM3mCYsDsweiQ%26rut%3D5805d18cbee1764667c1947c7d66eb4ba96882be8b3a8886949ca8d0867bc99a%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8Wq6iYt1F_9ApQ1t_URstDzVUCUyQRGUxwLBnuEKVRGvWTsfcCenzd7IBkGG4G1IlYODqeEl8ULrKW%252DQcrSzVnfnRLaWShrgtbkDzsEF8PQ4Hvk4qgkoN99j6k6LnULpveqaIvPhy6LMJbEI0kl5USyWYbmnuGMrN9K4WsJn2BWW1DUnOhR1CjLhSQZ9BVBB6toFIsA%2526u%253DaHR0cHMlM2ElMmYlMmZhZC5kb3VibGVjbGljay5uZXQlMmZzZWFyY2hhZHMlMmZsaW5rJTJmY2xpY2slM2ZsaWQlM2QzOTcwMDA3NzIyMjk3NDMzNyUyNmRzX3Nfa3dnaWQlM2Q1ODcwMDAwODQ3NjEzODI3OCUyNmRzX2FfY2lkJTNkNjY2NjY4MDczJTI2ZHNfYV9jYWlkJTNkMjAwMTUyMzgzNjIlMjZkc19hX2FnaWQlM2QxNTE1OTQwNDU1NzUlMjZkc19hX2xpZCUzZGRzYS0yMTU5MzQ3MDEwNzk5JTI2JTI2ZHNfZV9hZGlkJTNkNzMzMjM5ODczNzU2NjUlMjZkc19lX3RhcmdldF9pZCUzZGRhdC0yMzI1MTIzNDk1NjIwNzcyJTNhbG9jLTE5MCUyNiUyNmRzX2VfbmV0d29yayUzZHMlMjZkc191cmxfdiUzZDIlMjZkc19kZXN0X3VybCUzZGh0dHBzJTNhJTJmJTJmd3d3LmRlbGwuY29tJTJmZW4tdXMlMmZzaG9wJTJmc3VwZXItbWFyaW8tb2R5c3NleS1uaW50ZW5kby1zd2l0Y2glMmZhcGQlMmZhYjkwODAxMiUyZmdhbWluZy1nYW1pbmctYWNjZXNzb3JpZXMlM2ZnYWNkJTNkOTY4NDk5Mi0xMTE5LTU3NjMwMTctMjY2NTk4MTU4LTAlMjZkZ2MlM2RTVCUyNlNBMzYwQ0lEJTNkNzE3MDAwMDAxMDk2MjUwNzMlMjZnY2xpZCUzZDI2ODc4Yzc4M2ViZjFlY2FiYWI5ZTQwZGI3ZGZiYTEwJTI2Z2Nsc3JjJTNkM3AuZHMlMjYlMjZtc2Nsa2lkJTNkMjY4NzhjNzgzZWJmMWVjYWJhYjllNDBkYjdkZmJhMTA%2526rlid%253D26878c783ebf1ecabab9e40db7dfba10%26vqd%3D4%2D156973241089881480642049318079506725148%26iurl%3D%257B1%257DIG%253DDC43EE719D4E4D3D906AB77A464B45DF%2526CID%253D38EBB7729B0A656413AEA15B9A3564CE%2526ID%253DDevEx%252C5048.1&amp;rut=67ea9c85b9d231dc8373d6c74ae5722f0429f9f25639da6d864cc8793500fe35" class='result-link'>Super Mario Odyssey - Dell.com - Official Site</a>
+    
+
+      (Sponsored link - <a href="https://duckduckgo.com/duckduckgo-help-pages/company/ads-by-microsoft-on-duckduckgo-private-search/" rel="nofollow" class="result-link">more info</a>)
+
+    </td>
+  </tr>
+
+  
+  <tr class="result-sponsored">
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      The New <b>Super</b> <b>Mario</b> Odyssey Is Now Available to Buy Online at Dell.com Today!
+    </td>
+  </tr>
+  
+
+  
+  <tr class="result-sponsored">
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>dell.com</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  
+
+
+
+
+
+
+
+
+ 
+
+ <tr class="result-sponsored">
+
+    <td valign="top">2.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2Fy.js%3Fad_domain%3Damazon.com%26ad_provider%3Dbingv7aa%26ad_type%3Dtxad%26click_metadata%3DvIOhK9AQLpgHCkux84kIEpMS1vyN7iXNlhja68%252DWkrAVBqI0tomngrt5trHShiSl1DnMukNSgj7i9Jjtna5CbGax_wnQUEchAIjoLCBUmFjLqvOdsti9L6MYRSpTg%252D0f.mYK6r3NVduXW1Z%252Dz_Z_zjQ%26rut%3Dfecc076c8e0eefd1d55327dfba56ff671958e270aae0c64837e7d888df5119a3%26u3%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8qPMEEA7f4l8G9w6dD%252D2cGjVUCUzDVYzEN0Sflm0jVi6gnyobdUToc2fNaQzoobwgNK4jB5rbsxixomkPesxvnFHcgGEcmP5KxPmyqZlYJYUlqVxZL997AlSnMZO3n7WcODSTyjP5Mtd6PG%252D9i7WpZB01B8GZm72D3JmV5FrkYHVpF%252Dzt0s9eVj2qaWvYBBqrW2K18Q%2526u%253DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGdhbWVzJTJiZm9yJTJibWFyaW8lMjZpbmRleCUzZGFwcyUyNnRhZyUzZHR4dHN0ZGJnZHQtMjAlMjZyZWYlM2RwZF9zbF8zMnhvMnRheGk2X3AlMjZhZGdycGlkJTNkMTIzMjU1Mjg0NTU0OTAzMSUyNmh2YWRpZCUzZDc3MDM0NzE5Mzk0ODI4JTI2aHZuZXR3JTNkcyUyNmh2cW10JTNkcCUyNmh2Ym10JTNkYnAlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkODA0NjclMjZodnRhcmdpZCUzZGt3ZC03NzAzNDk2NjM3MjcyMiUzYWxvYy0xOTAlMjZoeWRhZGNyJTNkNzc1MV8xMzYxMDM1OSUyNm1jaWQlM2QwZmUxM2JlZGQyZDUzOTZmODQwOTdiMGY5NDhiZTgwNSUyNmxhbmd1YWdlJTNkZW5fVVMlMjZtc2Nsa2lkJTNkNDBkMGVkZTI1YmExMTFhZmZkNmY4NTk3ZDJjMWNkMTY%2526rlid%253D40d0ede25ba111affd6f8597d2c1cd16%26vqd%3D4%2D104196500305818249493995783941216386699%26iurl%3D%257B1%257DIG%253DDC43EE719D4E4D3D906AB77A464B45DF%2526CID%253D38EBB7729B0A656413AEA15B9A3564CE%2526ID%253DDevEx%252C5052.1&amp;rut=57ebcfcbcd63cfa5c37085e6fce2608ea607757613b19f26cefe98aae7c111e1" class='result-link'>Shop games for mario - Amazon.com Official Site</a>
+    
+
+      (Sponsored link - <a href="https://duckduckgo.com/duckduckgo-help-pages/company/ads-by-microsoft-on-duckduckgo-private-search/" rel="nofollow" class="result-link">more info</a>)
+
+    </td>
+  </tr>
+
+  
+  <tr class="result-sponsored">
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      Shop by age, favorite brands, new products, best sellers, and gifts for birthdays. Find deals and compare prices on games for <b>mario</b> at Amazon.com
+    </td>
+  </tr>
+  
+
+  
+  <tr class="result-sponsored">
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>amazon.com</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">3.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fsupermarioplay.com%2F&amp;rut=416e99b20d246a29037e3b978af0fbfc32a3c080091fb820212dd09682e2cc77" class='result-link'>Play the original Super Mario Bros Game Online</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      Play the original <b>Super</b> <b>Mario</b> Bros game online for free and enjoy the wonderful and challenging world of <b>Mario</b>. Learn about the gameplay, history, media, and comments of one of the best games ever.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>supermarioplay.com</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">4.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fmario.nintendo.com%2F&amp;rut=0fd31b7964bb0906b4cdd3d1581526d3342280f0171c5755abcacb261aa42779" class='result-link'>The official home of Super Mario™ - Home</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      Nintendo&#x27;s official home for all things <b>Mario</b>. Games, videos, and more.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>mario.nintendo.com</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">5.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSuper_Mario&amp;rut=1b4cf20e817550c538c7ded88e2f5b0640d7654deba2277abd46597831395142" class='result-link'>Super Mario - Wikipedia</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      <b>Super</b> Mario[a] (also known as <b>Super</b> <b>Mario</b> Bros.[b] and <b>Mario</b>) [c] is a platform game series created by Nintendo starring their mascot, <b>Mario</b>. It is the central series of the greater <b>Mario</b> franchise. At least one <b>Super</b> <b>Mario</b> game has been released for every major Nintendo video game console. However, there have also been a number of <b>Super</b> <b>Mario</b> video games released on non-Nintendo gaming ...
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>en.wikipedia.org/wiki/Super_Mario</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">6.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.mariowiki.com%2F&amp;rut=a9b174bd1cdd8ac72a7a1af11a8451aec1ba74a6ca3bb0dcf24a59305840941e" class='result-link'>Super Mario Wiki, the Mario encyclopedia</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      The <b>Super</b> <b>Mario</b> Wiki is a comprehensive encyclopedia dedicated to the <b>Super</b> <b>Mario</b> video game franchise from Nintendo, with 32,085 articles.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>www.mariowiki.com</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">7.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fmario.fandom.com%2Fwiki%2FSuper_Mario_(series)&amp;rut=8a188df691ddebe0de5d6e4e7ff3cdfedda5a3426959131ffc096d8ff5536986" class='result-link'>Super Mario (series) | Mario Wiki | Fandom</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      <b>Super</b> <b>Mario</b> is a series of platforming games, generally 2D, within the <b>Mario</b> franchise starring <b>Mario</b>. They mostly revolve around the titular plumber who goes on many adventures to save Princess Peach from the evil Bowser and his Koopa Troop, often with the help of his brother Luigi.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>mario.fandom.com/wiki/Super_Mario_(series)</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">8.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fsupermariobrosplay.com%2Fplay%2F&amp;rut=8339c5f59e139fe5dfa0e99d7529a29a9baa114ea3e5f17695feaf3b305dc9ca" class='result-link'>Play Super Mario Bros Online</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      Welcome to Play <b>Mario</b> Online, the ultimate platform to relive the magic of Nintendo&#x27;s legendary <b>Super</b> <b>Mario</b> Bros. game! Enjoy the original 32 levels, explore randomized maps, and dive into over a dozen custom mods. Start your adventure now! We thank Nintendo for creating the iconic <b>Mario</b> series that has inspired generations. This project is a tribute to the fan community and the enduring charm ...
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>supermariobrosplay.com/play/</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">9.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fnintendo.fandom.com%2Fwiki%2FSuper_Mario_(series)&amp;rut=302813710b7ac8e91ded24096d5d9d615d9ee692d40cffc234b8e65e9013351b" class='result-link'>Super Mario (series) - Nintendo</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      The <b>Super</b> <b>Mario</b> series is part of the entire <b>Mario</b> franchise, in which it consist of all the mainline entries. Just about every game has the word &quot;<b>Super</b>&quot; in each title, followed by a subtitle after. The games are focused on platforming adventure, in both 2D and 3D forms - many of which have been considered &quot;revolutionary&quot;. Its first and most-successful release is the original <b>Super</b> <b>Mario</b> Bros ...
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>nintendo.fandom.com/wiki/Super_Mario_(series)</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">10.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.nintendo.zara%26hl%3Den%2DUS&amp;rut=35f732142bc5c709f41062b30182e26afeb6e34d765100a92606b74a09c1bcea" class='result-link'>Super Mario Run - Apps on Google Play</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      <b>Super</b> <b>Mario</b> Run can be downloaded for free and after you purchase the game, you will be able to play all the modes with no additional payment required. You can try out all four modes before purchase: World Tour, Toad Rally, Remix 10, and Kingdom Builder. World Tour Run and jump with style to rescue Princess Peach from Bowser&#x27;s clutches!
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>play.google.com/store/apps/details?id=com.nintendo.zara&amp;hl=en-US</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">11.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.amazon.com%2FSuper%2DMario%2DBros%2DMovie%2Fdp%2FB0DZW287W6&amp;rut=3ce9f4e4baa1854b8ac3697e76173ecf4421ed1d259b7f00a1d90f185ae8172a" class='result-link'>Watch The Super Mario Bros. Movie | Prime Video - amazon.com</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      From Nintendo and Illumination comes a new animated film based on the world of <b>Super</b> <b>Mario</b> Bros.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>www.amazon.com/Super-Mario-Bros-Movie/dp/B0DZW287W6</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">12.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt0108255%2F&amp;rut=c1896c429282e6058980689a4b300a73f1b66628905966e11616edfb8df3de9d" class='result-link'>Super Mario Bros. (1993) - IMDb</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      <b>Super</b> <b>Mario</b> Bros.: Directed by Annabel Jankel, Rocky Morton. With Bob Hoskins, John Leguizamo, Dennis Hopper, Samantha Mathis. Two Brooklyn plumbers, <b>Mario</b> and Luigi, must travel to another dimension to rescue a princess from the evil dictator King Koopa and stop him from taking over the world.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>www.imdb.com/title/tt0108255/</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+  
+    <tr>
+    <td colspan=2>
+      
+      
+        <form class="next_form" action="/lite/" method="post">
+          <!-- <a rel="next" href="/lite/?q=super+marios&amp;v=l&amp;l=us-en&amp;p=&amp;s=10&amp;ex=-1&amp;o=json&amp;dl=en&amp;ct=US&amp;sp=0&amp;vqd=4-259546836724608603286489099771696031144&amp;bing_market=en-US&amp;host_region=use&amp;dp=rMW3PkalE1ONWAXydK0_wYSMKS1uiCKorLfBaoPcBq64rDqS_kidhSEOer7o45zmJn3ZW2B-VwQJ0d2hf67MVyAYt4F0F9HK-0y6ARx8BsjZD1cEe0O1akfFNDgZeMX5.TyXuccRQL0aViBJBN07Tbg&amp;dc=13&amp;api=%2Fd.js">Next Page &gt;</a> //-->
+          <input type="submit" class='navbutton' value="Next Page &gt;">
+          <input type="hidden" name="q" value="super marios">
+          <input type="hidden" name="s" value="10">
+          <input type="hidden" name="nextParams" value="">
+          <input type="hidden" name="v" value="l">
+          <input type="hidden" name="o" value="json">
+          <input type="hidden" name="dc" value="13">
+          <input type="hidden" name="api" value="d.js">
+          <input type="hidden" name="vqd" value="4-259546836724608603286489099771696031144">
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          
+          
+          
+          <input name="kl" value="wt-wt" type="hidden">
+          
+          
+          
+          
+        </form>
+      
+      
+    </td>
+  </tr>
+
+</table>
+
+<p class='extra'>&nbsp;</p>
+
+<form action="/lite/" method="post">
+  <input class='query' type="text" size="40" name="q" value="super marios" >
+  <input class='submit' type="submit" value="Search" >
+
+
+
+
+
+  <input name="kl" value="wt-wt" type="hidden">
+
+</form>
+
+<p class='extra'>&nbsp;</p>
+
+<!--
+<a href="#top">Top</a>
+//-->
+
+
+  <img src="//duckduckgo.com/t/sl_l"/>
+
+<div id='end-spacer'>&nbsp;</div>
+
+</body>
+</html>

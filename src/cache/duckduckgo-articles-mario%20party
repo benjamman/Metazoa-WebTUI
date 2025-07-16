@@ -1,0 +1,726 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1;">
+  <meta name="referrer" content="origin">
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>mario partys at DuckDuckGo</title>
+  <link title="DuckDuckGo (Lite)" type="application/opensearchdescription+xml" rel="search" href="//duckduckgo.com/opensearch_lite_v2.xml">
+  <link href="//duckduckgo.com/favicon.ico" rel="shortcut icon" />
+  <link rel="icon" href="//duckduckgo.com/favicon.ico" type="image/x-icon" />
+  <link id="icon60" rel="apple-touch-icon" href="//duckduckgo.com/assets/icons/meta/DDG-iOS-icon_60x60.png?v=2"/>
+  <link id="icon76" rel="apple-touch-icon" sizes="76x76" href="//duckduckgo.com/assets/icons/meta/DDG-iOS-icon_76x76.png?v=2"/>
+  <link id="icon120" rel="apple-touch-icon" sizes="120x120" href="//duckduckgo.com/assets/icons/meta/DDG-iOS-icon_120x120.png?v=2"/>
+  <link id="icon152" rel="apple-touch-icon" sizes="152x152" href="//duckduckgo.com/assets/icons/meta/DDG-iOS-icon_152x152.png?v=2"/>
+  <link rel="image_src" href="//duckduckgo.com/assets/icons/meta/DDG-icon_256x256.png">
+  <link rel="stylesheet" media="handheld, all" href="//duckduckgo.com/dist/lr.1cd17d60d7411155ecc4.css" type="text/css"/>
+</head>
+
+<body>
+<p class='extra'>&nbsp;</p>
+<div class="header">DuckDuckGo</div>
+<p class='extra'>&nbsp;</p>
+
+<form action="/lite/" method="post">
+  <input class='query' type="text" size="40" name="q" value="mario partys" >
+  <input class='submit' type="submit" value="Search" >
+
+
+
+
+
+<div class="filters">
+
+<select class="submit" name="kl">
+
+  <option value="" >All Regions</option>
+
+  <option value="ar-es" >Argentina</option>
+
+  <option value="au-en" >Australia</option>
+
+  <option value="at-de" >Austria</option>
+
+  <option value="be-fr" >Belgium (fr)</option>
+
+  <option value="be-nl" >Belgium (nl)</option>
+
+  <option value="br-pt" >Brazil</option>
+
+  <option value="bg-bg" >Bulgaria</option>
+
+  <option value="ca-en" >Canada (en)</option>
+
+  <option value="ca-fr" >Canada (fr)</option>
+
+  <option value="ct-ca" >Catalonia</option>
+
+  <option value="cl-es" >Chile</option>
+
+  <option value="cn-zh" >China</option>
+
+  <option value="co-es" >Colombia</option>
+
+  <option value="hr-hr" >Croatia</option>
+
+  <option value="cz-cs" >Czech Republic</option>
+
+  <option value="dk-da" >Denmark</option>
+
+  <option value="ee-et" >Estonia</option>
+
+  <option value="fi-fi" >Finland</option>
+
+  <option value="fr-fr" >France</option>
+
+  <option value="de-de" >Germany</option>
+
+  <option value="gr-el" >Greece</option>
+
+  <option value="hk-tzh" >Hong Kong</option>
+
+  <option value="hu-hu" >Hungary</option>
+
+  <option value="is-is" >Iceland</option>
+
+  <option value="in-en" >India (en)</option>
+
+  <option value="id-en" >Indonesia (en)</option>
+
+  <option value="ie-en" >Ireland</option>
+
+  <option value="il-en" >Israel (en)</option>
+
+  <option value="it-it" >Italy</option>
+
+  <option value="jp-jp" >Japan</option>
+
+  <option value="kr-kr" >Korea</option>
+
+  <option value="lv-lv" >Latvia</option>
+
+  <option value="lt-lt" >Lithuania</option>
+
+  <option value="my-en" >Malaysia (en)</option>
+
+  <option value="mx-es" >Mexico</option>
+
+  <option value="nl-nl" >Netherlands</option>
+
+  <option value="nz-en" >New Zealand</option>
+
+  <option value="no-no" >Norway</option>
+
+  <option value="pk-en" >Pakistan (en)</option>
+
+  <option value="pe-es" >Peru</option>
+
+  <option value="ph-en" >Philippines (en)</option>
+
+  <option value="pl-pl" >Poland</option>
+
+  <option value="pt-pt" >Portugal</option>
+
+  <option value="ro-ro" >Romania</option>
+
+  <option value="ru-ru" >Russia</option>
+
+  <option value="xa-ar" >Saudi Arabia</option>
+
+  <option value="sg-en" >Singapore</option>
+
+  <option value="sk-sk" >Slovakia</option>
+
+  <option value="sl-sl" >Slovenia</option>
+
+  <option value="za-en" >South Africa</option>
+
+  <option value="es-ca" >Spain (ca)</option>
+
+  <option value="es-es" >Spain (es)</option>
+
+  <option value="se-sv" >Sweden</option>
+
+  <option value="ch-de" >Switzerland (de)</option>
+
+  <option value="ch-fr" >Switzerland (fr)</option>
+
+  <option value="tw-tzh" >Taiwan</option>
+
+  <option value="th-en" >Thailand (en)</option>
+
+  <option value="tr-tr" >Turkey</option>
+
+  <option value="us-en" >US (English)</option>
+
+  <option value="us-es" >US (Spanish)</option>
+
+  <option value="ua-uk" >Ukraine</option>
+
+  <option value="uk-en" >United Kingdom</option>
+
+  <option value="vn-en" >Vietnam (en)</option>
+
+</select>
+
+<select class="submit" name="df">
+
+  <option value="" selected>Any Time</option>
+
+  <option value="d" >Past Day</option>
+
+  <option value="w" >Past Week</option>
+
+  <option value="m" >Past Month</option>
+
+  <option value="y" >Past Year</option>
+
+</select>
+
+</form>
+
+
+  <p class="extra">&nbsp;</p>
+    <table border="0"><tr>
+    <td>
+      
+    </td>
+    <td>
+      
+        <form action="/lite/" method="post">
+          <!-- <a rel="next" href="/lite/?q=mario+partys&amp;v=l&amp;l=us-en&amp;p=&amp;s=10&amp;ex=-1&amp;o=json&amp;dl=en&amp;ct=US&amp;sp=0&amp;vqd=4-25930602285989559799716419124941218013&amp;bing_market=en-US&amp;host_region=use&amp;dp=xxl4-E5Qj8govwURxM4pVakB6MnW9KkYef26pWp5AoSbT9n3qCDl9pwc9Lq0yaXoIn-7jxaamNZBpBvyAv7SeO0UFRFzqTZg8bvmo3I4gFzjGVvHmzdwkOPUQLHTUicO.oOqjB04hWQGZVX_1dGT9jg&amp;dc=11&amp;api=%2Fd.js">Next Page &gt;</a> //-->
+          <input type="submit" class='navbutton' value="Next Page &gt;">
+          <input type="hidden" name="q" value="mario partys">
+          <input type="hidden" name="s" value="10">
+          <input type="hidden" name="nextParams" value="">
+          <input type="hidden" name="v" value="l">
+          <input type="hidden" name="o" value="json">
+          <input type="hidden" name="dc" value="11">
+          <input type="hidden" name="api" value="d.js">
+          <input type="hidden" name="vqd" value="4-25930602285989559799716419124941218013">
+          
+          
+          
+          <input name="kl" value="wt-wt" type="hidden">
+          
+          
+          
+          
+        </form>
+      
+    </td>
+    </tr></table>
+
+
+
+
+<p class='extra'>&nbsp;</p>
+
+<table border="0">
+
+</table>
+
+<table border="0">
+
+<!-- Web results are present -->
+
+
+
+
+
+ <tr>
+
+    <td valign="top">1.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.mariowiki.com%2FMario_Party_(series)&amp;rut=e444c7281c6fb942cbb0bd4afb2a9060166578131933f9ebcba4e471d4934a85" class='result-link'>Mario Party (series) - Super Mario Wiki, the Mario encyclopedia</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      The <b>Mario</b> <b>Party</b> series is a series of <b>party</b> games featuring the characters of the Super <b>Mario</b> franchise, in which four human- or computer-controlled characters compete in a board game interspersed with minigames. The series is known for its <b>party</b>...
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>www.mariowiki.com/Mario_Party_(series)</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">2.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMario_Party&amp;rut=c415308f8abdf07296046832909c591eefea74665c5badda1aa653482af7ab5d" class='result-link'>Mario Party - Wikipedia</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      <b>Mario</b> <b>Party</b> ... <b>Mario</b> Party[a] is a series of <b>party</b> video games created by Hudson Soft and owned by Nintendo. It features characters from the <b>Mario</b> franchise in which up to four local players or computer-controlled characters (called &quot;CPUs&quot;) compete in a board game interspersed with minigames.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>en.wikipedia.org/wiki/Mario_Party</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">3.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nintendo.com%2Fus%2Fstore%2Fproducts%2Fsuper%2Dmario%2Dparty%2Djamboree%2Dswitch%2F&amp;rut=0bec206ffd4f855ef8c9c8bc0cf6df5b420fb772fcb147946003518508a88d91" class='result-link'>Super Mario Party™ Jamboree - Nintendo</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      Buy Super <b>Mario</b> <b>Party</b>™ Jamboree and shop other great Nintendo products online at the official My Nintendo Store.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>www.nintendo.com/us/store/products/super-mario-party-jamboree-switch/</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">4.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fmariopartylegacy.com%2Fgames&amp;rut=0d6475a59dedd647fa283330a8a8a1db8c06415441f3e55642c063425ed3ca14" class='result-link'>Games - Mario Party Legacy</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      Our list of <b>Mario</b> <b>Party</b> games covers the entire series, including all 18 games, over 1,000 minigames and 100 boards, and dozens of playable characters.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>mariopartylegacy.com/games</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">5.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nintendolife.com%2Fguides%2Fbest%2Dmario%2Dparty%2Dgames%2Dof%2Dall%2Dtime&amp;rut=755f8a0bf3cdddef360307f5fc1aabbd066a3d8849fbad5eb9cbae4d1ac2b4d6" class='result-link'>Best Mario Party Games Of All Time - Nintendo Life</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      Here is the <b>Mario</b> <b>Party</b> series ranked from worst to best. On this page: Best <b>Mario</b> <b>Party</b> Games Of All Time 1. 19 to 11 2. 10 to 1 3. Best <b>Mario</b> <b>Party</b> FAQ
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>www.nintendolife.com/guides/best-mario-party-games-of-all-time</span>
+      
+        &nbsp;&nbsp;&nbsp;<span class='timestamp'>2024-10-23T00:00:00.0000000
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">6.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.thegamer.com%2Fbest%2Dmario%2Dparty%2Dgame%2F&amp;rut=4e7beeb407cba5569fc6a7df6a38018e4dd1471b9bf0375475820f4e8cbb3703" class='result-link'>Best Mario Party Games, Ranked - TheGamer</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      Each <b>Mario</b> <b>Party</b> game brings hype and high expectations; yet, the long-running Nintendo series is a mix of great and downright bad entries.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>www.thegamer.com/best-mario-party-game/</span>
+      
+        &nbsp;&nbsp;&nbsp;<span class='timestamp'>2024-10-29T00:00:00.0000000
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">7.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fmariopartysuperstars.nintendo.com%2F&amp;rut=98a008f5a36b51f169d7e1d87d02f922ebccb5232e7df449ffa2cc61fb8266c8" class='result-link'>Mario Party™ Superstars for the Nintendo Switch™ — Official Site</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      The <b>Mario</b> <b>Party</b>™ series is back with a superstar collection of classic gameboards and minigames. Turn the tables on friends and family in wild games that can change with the roll of the dice—exclusively for the Nintendo Switch™ family of systems.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>mariopartysuperstars.nintendo.com</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">8.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fnintendo.fandom.com%2Fwiki%2FMario_Party_(series)&amp;rut=fae0ecc6f600a0d7b6240ac956d95d7eed508a8f7e59f24e384fc8a56158111f" class='result-link'>Mario Party (series) - Nintendo</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      <b>Mario</b> <b>Party</b> (Japanese: マリオパーティ, <b>Mario</b> Pāti) is a series of <b>party</b> games featuring the characters of the <b>Mario</b> franchise, in which four human- or computer-controlled characters compete in a board game interspersed with minigames. The series is known for its <b>party</b> game elements, including the often-unpredictable multiplayer modes that allow play with up to four (and, in one case ...
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>nintendo.fandom.com/wiki/Mario_Party_(series)</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">9.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fmario.fandom.com%2Fwiki%2FMario_Party&amp;rut=9c9fa5b584bc8ff6462c0be0896973d77139387148377e09b6ccf7e8b5178eb8" class='result-link'>Mario Party</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      <b>Mario</b> <b>Party</b> sometimes called <b>Mario</b> <b>Party</b> 1 (マリオパーテ, <b>Mario</b> Pāti) is a video game for the Nintendo 64. It is based on various board games, such as Monopoly, and is the first and titular installment within the series of the same name. In this game, choose one of the six characters to play as, choose a board to play on and then play and move around it. As you progress, you can collect ...
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>mario.fandom.com/wiki/Mario_Party</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">10.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nintendolife.com%2Fgames%2Fbrowse%3Ftitle%3Dseries%253Amario%2Dparty&amp;rut=2cf5c5c7ce4e386ade9c76d3857ec106e1f7796956694af2a5f69a28145fb49d" class='result-link'>All Mario Party Games - Nintendo Life</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      <b>Mario</b> <b>Party</b> 3 N64 Nintendo / Hudson Soft 7th Dec 2000 (JPN) 6th Mar 2001 (NA) 16th Nov 2001 (UK/EU) <b>Mario</b> <b>Party</b> Advance GBA Nintendo / Hudson Soft 13th Jan 2005 (JPN) 28th Mar 2005 (NA) 10th Jun ...
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>www.nintendolife.com/games/browse?title=series:mario-party</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+  
+    <tr>
+    <td colspan=2>
+      
+      
+        <form class="next_form" action="/lite/" method="post">
+          <!-- <a rel="next" href="/lite/?q=mario+partys&amp;v=l&amp;l=us-en&amp;p=&amp;s=10&amp;ex=-1&amp;o=json&amp;dl=en&amp;ct=US&amp;sp=0&amp;vqd=4-25930602285989559799716419124941218013&amp;bing_market=en-US&amp;host_region=use&amp;dp=xxl4-E5Qj8govwURxM4pVakB6MnW9KkYef26pWp5AoSbT9n3qCDl9pwc9Lq0yaXoIn-7jxaamNZBpBvyAv7SeO0UFRFzqTZg8bvmo3I4gFzjGVvHmzdwkOPUQLHTUicO.oOqjB04hWQGZVX_1dGT9jg&amp;dc=11&amp;api=%2Fd.js">Next Page &gt;</a> //-->
+          <input type="submit" class='navbutton' value="Next Page &gt;">
+          <input type="hidden" name="q" value="mario partys">
+          <input type="hidden" name="s" value="10">
+          <input type="hidden" name="nextParams" value="">
+          <input type="hidden" name="v" value="l">
+          <input type="hidden" name="o" value="json">
+          <input type="hidden" name="dc" value="11">
+          <input type="hidden" name="api" value="d.js">
+          <input type="hidden" name="vqd" value="4-25930602285989559799716419124941218013">
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          
+          
+          
+          <input name="kl" value="wt-wt" type="hidden">
+          
+          
+          
+          
+        </form>
+      
+      
+    </td>
+  </tr>
+
+</table>
+
+<p class='extra'>&nbsp;</p>
+
+<form action="/lite/" method="post">
+  <input class='query' type="text" size="40" name="q" value="mario partys" >
+  <input class='submit' type="submit" value="Search" >
+
+
+
+
+
+  <input name="kl" value="wt-wt" type="hidden">
+
+</form>
+
+<p class='extra'>&nbsp;</p>
+
+<!--
+<a href="#top">Top</a>
+//-->
+
+
+  <img src="//duckduckgo.com/t/sl_l"/>
+
+<div id='end-spacer'>&nbsp;</div>
+
+</body>
+</html>

@@ -1,0 +1,728 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1;">
+  <meta name="referrer" content="origin">
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>super mario sunshines at DuckDuckGo</title>
+  <link title="DuckDuckGo (Lite)" type="application/opensearchdescription+xml" rel="search" href="//duckduckgo.com/opensearch_lite_v2.xml">
+  <link href="//duckduckgo.com/favicon.ico" rel="shortcut icon" />
+  <link rel="icon" href="//duckduckgo.com/favicon.ico" type="image/x-icon" />
+  <link id="icon60" rel="apple-touch-icon" href="//duckduckgo.com/assets/icons/meta/DDG-iOS-icon_60x60.png?v=2"/>
+  <link id="icon76" rel="apple-touch-icon" sizes="76x76" href="//duckduckgo.com/assets/icons/meta/DDG-iOS-icon_76x76.png?v=2"/>
+  <link id="icon120" rel="apple-touch-icon" sizes="120x120" href="//duckduckgo.com/assets/icons/meta/DDG-iOS-icon_120x120.png?v=2"/>
+  <link id="icon152" rel="apple-touch-icon" sizes="152x152" href="//duckduckgo.com/assets/icons/meta/DDG-iOS-icon_152x152.png?v=2"/>
+  <link rel="image_src" href="//duckduckgo.com/assets/icons/meta/DDG-icon_256x256.png">
+  <link rel="stylesheet" media="handheld, all" href="//duckduckgo.com/dist/lr.1cd17d60d7411155ecc4.css" type="text/css"/>
+</head>
+
+<body>
+<p class='extra'>&nbsp;</p>
+<div class="header">DuckDuckGo</div>
+<p class='extra'>&nbsp;</p>
+
+<form action="/lite/" method="post">
+  <input class='query' type="text" size="40" name="q" value="super mario sunshines" >
+  <input class='submit' type="submit" value="Search" >
+
+
+
+
+
+<div class="filters">
+
+<select class="submit" name="kl">
+
+  <option value="" >All Regions</option>
+
+  <option value="ar-es" >Argentina</option>
+
+  <option value="au-en" >Australia</option>
+
+  <option value="at-de" >Austria</option>
+
+  <option value="be-fr" >Belgium (fr)</option>
+
+  <option value="be-nl" >Belgium (nl)</option>
+
+  <option value="br-pt" >Brazil</option>
+
+  <option value="bg-bg" >Bulgaria</option>
+
+  <option value="ca-en" >Canada (en)</option>
+
+  <option value="ca-fr" >Canada (fr)</option>
+
+  <option value="ct-ca" >Catalonia</option>
+
+  <option value="cl-es" >Chile</option>
+
+  <option value="cn-zh" >China</option>
+
+  <option value="co-es" >Colombia</option>
+
+  <option value="hr-hr" >Croatia</option>
+
+  <option value="cz-cs" >Czech Republic</option>
+
+  <option value="dk-da" >Denmark</option>
+
+  <option value="ee-et" >Estonia</option>
+
+  <option value="fi-fi" >Finland</option>
+
+  <option value="fr-fr" >France</option>
+
+  <option value="de-de" >Germany</option>
+
+  <option value="gr-el" >Greece</option>
+
+  <option value="hk-tzh" >Hong Kong</option>
+
+  <option value="hu-hu" >Hungary</option>
+
+  <option value="is-is" >Iceland</option>
+
+  <option value="in-en" >India (en)</option>
+
+  <option value="id-en" >Indonesia (en)</option>
+
+  <option value="ie-en" >Ireland</option>
+
+  <option value="il-en" >Israel (en)</option>
+
+  <option value="it-it" >Italy</option>
+
+  <option value="jp-jp" >Japan</option>
+
+  <option value="kr-kr" >Korea</option>
+
+  <option value="lv-lv" >Latvia</option>
+
+  <option value="lt-lt" >Lithuania</option>
+
+  <option value="my-en" >Malaysia (en)</option>
+
+  <option value="mx-es" >Mexico</option>
+
+  <option value="nl-nl" >Netherlands</option>
+
+  <option value="nz-en" >New Zealand</option>
+
+  <option value="no-no" >Norway</option>
+
+  <option value="pk-en" >Pakistan (en)</option>
+
+  <option value="pe-es" >Peru</option>
+
+  <option value="ph-en" >Philippines (en)</option>
+
+  <option value="pl-pl" >Poland</option>
+
+  <option value="pt-pt" >Portugal</option>
+
+  <option value="ro-ro" >Romania</option>
+
+  <option value="ru-ru" >Russia</option>
+
+  <option value="xa-ar" >Saudi Arabia</option>
+
+  <option value="sg-en" >Singapore</option>
+
+  <option value="sk-sk" >Slovakia</option>
+
+  <option value="sl-sl" >Slovenia</option>
+
+  <option value="za-en" >South Africa</option>
+
+  <option value="es-ca" >Spain (ca)</option>
+
+  <option value="es-es" >Spain (es)</option>
+
+  <option value="se-sv" >Sweden</option>
+
+  <option value="ch-de" >Switzerland (de)</option>
+
+  <option value="ch-fr" >Switzerland (fr)</option>
+
+  <option value="tw-tzh" >Taiwan</option>
+
+  <option value="th-en" >Thailand (en)</option>
+
+  <option value="tr-tr" >Turkey</option>
+
+  <option value="us-en" >US (English)</option>
+
+  <option value="us-es" >US (Spanish)</option>
+
+  <option value="ua-uk" >Ukraine</option>
+
+  <option value="uk-en" >United Kingdom</option>
+
+  <option value="vn-en" >Vietnam (en)</option>
+
+</select>
+
+<select class="submit" name="df">
+
+  <option value="" selected>Any Time</option>
+
+  <option value="d" >Past Day</option>
+
+  <option value="w" >Past Week</option>
+
+  <option value="m" >Past Month</option>
+
+  <option value="y" >Past Year</option>
+
+</select>
+
+</form>
+
+
+  <p class="extra">&nbsp;</p>
+    <table border="0"><tr>
+    <td>
+      
+    </td>
+    <td>
+      
+        <form action="/lite/" method="post">
+          <!-- <a rel="next" href="/lite/?q=super+mario+sunshines&amp;v=l&amp;l=us-en&amp;p=&amp;s=10&amp;ex=-1&amp;o=json&amp;dl=en&amp;ct=US&amp;sp=0&amp;vqd=4-111399720331534309876413480959061885782&amp;bing_market=en-US&amp;host_region=use&amp;dp=-6fHvWasIkmZ0KfPOSd7G8Zvq7N398jf6UxltWSdAoue9aB8sTKnXmiYYofH8k3cZYA2rHse99Fe80SmKFtIOQlhoVs_PjRe5ABpDuFUdxvQliT85ffZIiQ8vyGiZ1ePD0o9burBPCNr9e9j529JEA.h-0jpUxhoHpOrtn0GQtIyQ&amp;dc=11&amp;api=%2Fd.js">Next Page &gt;</a> //-->
+          <input type="submit" class='navbutton' value="Next Page &gt;">
+          <input type="hidden" name="q" value="super mario sunshines">
+          <input type="hidden" name="s" value="10">
+          <input type="hidden" name="nextParams" value="">
+          <input type="hidden" name="v" value="l">
+          <input type="hidden" name="o" value="json">
+          <input type="hidden" name="dc" value="11">
+          <input type="hidden" name="api" value="d.js">
+          <input type="hidden" name="vqd" value="4-111399720331534309876413480959061885782">
+          
+          
+          
+          <input name="kl" value="wt-wt" type="hidden">
+          
+          
+          
+          
+        </form>
+      
+    </td>
+    </tr></table>
+
+
+
+
+<p class='extra'>&nbsp;</p>
+
+<table border="0">
+
+</table>
+
+<table border="0">
+
+<!-- Web results are present -->
+
+
+
+
+
+ <tr>
+
+    <td valign="top">1.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSuper_Mario_Sunshine&amp;rut=7dfaca0466d00f3d40e161e21f78a19200a7944fbd200666410af2cf8edd0df7" class='result-link'>Super Mario Sunshine - Wikipedia</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      <b>Super</b> <b>Mario</b> <b>Sunshine</b> is the first 3D <b>Super</b> <b>Mario</b> game with the ability to ride Yoshi. [6] At certain points, <b>Mario</b> can come across an egg which hatches into a Yoshi after being given a specific type of fruit. Yoshi can be ridden upon and attack by spitting juice, which can clear certain obstacles that water cannot.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>en.wikipedia.org/wiki/Super_Mario_Sunshine</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">2.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.mariowiki.com%2FSuper_Mario_Sunshine&amp;rut=24366bb519ac9bf6ac07e9c0ff2e12323ed26bda57ba6ba8233bbaad2f4e631c" class='result-link'>Super Mario Sunshine</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      <b>Super</b> <b>Mario</b> <b>Sunshine</b> is a 3D action-adventure platform game for the Nintendo GameCube. It is the ninth entry in the <b>Super</b> <b>Mario</b> series [7] [8] and the second 3D platformer, following <b>Super</b> <b>Mario</b> 64 (1996). The game&#x27;s principal mechanic centers around FLUDD, a rechargeable water-based tool that can be used to spray enemies and goop, hover or launch through the air, and dash to high speeds ...
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>www.mariowiki.com/Super_Mario_Sunshine</span>
+      
+        &nbsp;&nbsp;&nbsp;<span class='timestamp'>2025-06-29T00:00:00.0000000
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">3.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.ign.com%2Fwikis%2Fsuper%2Dmario%2Dsunshine%2FWalkthrough&amp;rut=8f2bd23ae3297ed976e9fd3905974ebc574e2c019e1a5fbdb638dc9369eae7cc" class='result-link'>Walkthrough - Super Mario Sunshine Guide - IGN</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      Welcome to IGN&#x27;s <b>Super</b> <b>Mario</b> <b>Sunshine</b> walkthrough. This page serves as an index for every location you&#x27;ll visit in the game. Click on each location to be taken to that world&#x27;s walkthrough page ...
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>www.ign.com/wikis/super-mario-sunshine/Walkthrough</span>
+      
+        &nbsp;&nbsp;&nbsp;<span class='timestamp'>2024-12-15T00:00:00.0000000
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">4.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.mobygames.com%2Fgame%2F7178%2Fsuper%2Dmario%2Dsunshine%2F&amp;rut=ed3a099ed58155d1cdb16a18c23f21dc215bdd5d23025368fd00917391c2058b" class='result-link'>Super Mario Sunshine (2002) - MobyGames</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      <b>Super</b> <b>Mario</b> <b>Sunshine</b> was released in 2002 to pretty much universal acclaim. IGN gave it a 9.5 and I&#x27;m fairly sure Eurogamer was ready with a 10/10 for this bad boy.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>www.mobygames.com/game/7178/super-mario-sunshine/</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">5.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fgamefaqs.gamespot.com%2Fgamecube%2F533287%2Dsuper%2Dmario%2Dsunshine&amp;rut=2ef51ec2b0c0485625ddbaccc348092a0270886791b94207a524d35d8a70601b" class='result-link'>Super Mario Sunshine for GameCube - GameFAQs</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      For <b>Super</b> <b>Mario</b> <b>Sunshine</b> on the GameCube, GameFAQs has 34 guides and walkthroughs, 18 cheat codes and secrets, 102 reviews, 12 save games, and 2517 user screenshots.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>gamefaqs.gamespot.com/gamecube/533287-super-mario-sunshine</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">6.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.amazon.com%2FSuper%2DMario%2DSunshine%2DNintendo%2DGameCube%2Fdp%2FB000066JRN&amp;rut=385287472b9c3a52fbbfceef6c08c4f5a636d8a62696313fb42b42811d39849d" class='result-link'>Amazon.com: Super Mario Sunshine : Video Games</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      Amazon.com: <b>Super</b> <b>Mario</b> <b>Sunshine</b> : Video GamesAbout this item When <b>Mario</b>, Peach, and an entourage of Peach&#x27;s loyal Toad friends set out for a tropical vacation on lovely Isle Delfino, they&#x27;re in store for much more than a relaxing holiday. A mustachioed maniac has mucked up the entire island, and <b>Mario</b> is accused of committing the crime. Armed with a hi-tech water cannon called FLUDD (Flash ...
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>www.amazon.com/Super-Mario-Sunshine-Nintendo-GameCube/dp/B000066JRN</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">7.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.gametdb.com%2FWii%2FGMSE01&amp;rut=c84d267e90eb1d6909d601b57ed97e6cc60904503bd5cf53c8377d846b0919e9" class='result-link'>GMSE01 - Super Mario Sunshine - GameTDB</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      Nintendo Wii games database, with information and artwork in all languages, including Japanese, Korean and Chinese.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>www.gametdb.com/Wii/GMSE01</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">8.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fmario.fandom.com%2Fwiki%2FSuper_Mario_Sunshine&amp;rut=acde2cfe3d1f5b7a847830e21cffc4d646ad9feeda2a9677d1d7df554299aa99" class='result-link'>Super Mario Sunshine</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      <b>Super</b> <b>Mario</b> <b>Sunshine</b> (スーパーマリオサンシャインSūpāmariosanshain?) is a 3D platforming game for the Nintendo GameCube. It is a <b>Super</b> <b>Mario</b> series title that serves as a direct sequel to <b>Super</b> <b>Mario</b> 64. The game was developed by Nintendo &#x27;s EAD division and published by Nintendo. It was released in North America on August 26, 2002; Japan on July 19, 2002; Europe on October 4 ...
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>mario.fandom.com/wiki/Super_Mario_Sunshine</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">9.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fstrategywiki.org%2Fwiki%2FSuper_Mario_Sunshine&amp;rut=1f273fdddb0bdd179c58193beff28adeb66e04940abd67dc4b65abced7951fcb" class='result-link'>Super Mario Sunshine - StrategyWiki</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      <b>Super</b> <b>Mario</b> <b>Sunshine</b> is a 3D platformer developed and published by Nintendo for the Nintendo GameCube. It was released in Japan on July 19, 2002, in North America on August 26, 2002, and in Europe on October 4, 2002.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>strategywiki.org/wiki/Super_Mario_Sunshine</span>
+      
+        &nbsp;&nbsp;&nbsp;<span class='timestamp'>2025-04-02T00:00:00.0000000
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">10.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fsimple.wikipedia.org%2Fwiki%2FSuper_Mario_Sunshine&amp;rut=92cda5ccdf276760cdd40da7cd725ab003499ee35a4cd490ce22f26aac283b81" class='result-link'>Super Mario Sunshine - Simple English Wikipedia, the free encyclopedia</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      <b>Super</b> <b>Mario</b> <b>Sunshine</b> (スーパーマリオサンシャイン, Sūpā <b>Mario</b> Sanshain) is a 2002 video game made by Nintendo for the Nintendo GameCube. It was the first platform game starring <b>Mario</b> that was not a launch title - it was not released when the Nintendo console debuted.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>simple.wikipedia.org/wiki/Super_Mario_Sunshine</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+  
+    <tr>
+    <td colspan=2>
+      
+      
+        <form class="next_form" action="/lite/" method="post">
+          <!-- <a rel="next" href="/lite/?q=super+mario+sunshines&amp;v=l&amp;l=us-en&amp;p=&amp;s=10&amp;ex=-1&amp;o=json&amp;dl=en&amp;ct=US&amp;sp=0&amp;vqd=4-111399720331534309876413480959061885782&amp;bing_market=en-US&amp;host_region=use&amp;dp=-6fHvWasIkmZ0KfPOSd7G8Zvq7N398jf6UxltWSdAoue9aB8sTKnXmiYYofH8k3cZYA2rHse99Fe80SmKFtIOQlhoVs_PjRe5ABpDuFUdxvQliT85ffZIiQ8vyGiZ1ePD0o9burBPCNr9e9j529JEA.h-0jpUxhoHpOrtn0GQtIyQ&amp;dc=11&amp;api=%2Fd.js">Next Page &gt;</a> //-->
+          <input type="submit" class='navbutton' value="Next Page &gt;">
+          <input type="hidden" name="q" value="super mario sunshines">
+          <input type="hidden" name="s" value="10">
+          <input type="hidden" name="nextParams" value="">
+          <input type="hidden" name="v" value="l">
+          <input type="hidden" name="o" value="json">
+          <input type="hidden" name="dc" value="11">
+          <input type="hidden" name="api" value="d.js">
+          <input type="hidden" name="vqd" value="4-111399720331534309876413480959061885782">
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          
+          
+          
+          <input name="kl" value="wt-wt" type="hidden">
+          
+          
+          
+          
+        </form>
+      
+      
+    </td>
+  </tr>
+
+</table>
+
+<p class='extra'>&nbsp;</p>
+
+<form action="/lite/" method="post">
+  <input class='query' type="text" size="40" name="q" value="super mario sunshines" >
+  <input class='submit' type="submit" value="Search" >
+
+
+
+
+
+  <input name="kl" value="wt-wt" type="hidden">
+
+</form>
+
+<p class='extra'>&nbsp;</p>
+
+<!--
+<a href="#top">Top</a>
+//-->
+
+
+  <img src="//duckduckgo.com/t/sl_l"/>
+
+<div id='end-spacer'>&nbsp;</div>
+
+</body>
+</html>

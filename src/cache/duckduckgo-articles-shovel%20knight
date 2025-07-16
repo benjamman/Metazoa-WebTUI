@@ -1,0 +1,722 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1;">
+  <meta name="referrer" content="origin">
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>shovel knights at DuckDuckGo</title>
+  <link title="DuckDuckGo (Lite)" type="application/opensearchdescription+xml" rel="search" href="//duckduckgo.com/opensearch_lite_v2.xml">
+  <link href="//duckduckgo.com/favicon.ico" rel="shortcut icon" />
+  <link rel="icon" href="//duckduckgo.com/favicon.ico" type="image/x-icon" />
+  <link id="icon60" rel="apple-touch-icon" href="//duckduckgo.com/assets/icons/meta/DDG-iOS-icon_60x60.png?v=2"/>
+  <link id="icon76" rel="apple-touch-icon" sizes="76x76" href="//duckduckgo.com/assets/icons/meta/DDG-iOS-icon_76x76.png?v=2"/>
+  <link id="icon120" rel="apple-touch-icon" sizes="120x120" href="//duckduckgo.com/assets/icons/meta/DDG-iOS-icon_120x120.png?v=2"/>
+  <link id="icon152" rel="apple-touch-icon" sizes="152x152" href="//duckduckgo.com/assets/icons/meta/DDG-iOS-icon_152x152.png?v=2"/>
+  <link rel="image_src" href="//duckduckgo.com/assets/icons/meta/DDG-icon_256x256.png">
+  <link rel="stylesheet" media="handheld, all" href="//duckduckgo.com/dist/lr.1cd17d60d7411155ecc4.css" type="text/css"/>
+</head>
+
+<body>
+<p class='extra'>&nbsp;</p>
+<div class="header">DuckDuckGo</div>
+<p class='extra'>&nbsp;</p>
+
+<form action="/lite/" method="post">
+  <input class='query' type="text" size="40" name="q" value="shovel knights" >
+  <input class='submit' type="submit" value="Search" >
+
+
+
+
+
+<div class="filters">
+
+<select class="submit" name="kl">
+
+  <option value="" >All Regions</option>
+
+  <option value="ar-es" >Argentina</option>
+
+  <option value="au-en" >Australia</option>
+
+  <option value="at-de" >Austria</option>
+
+  <option value="be-fr" >Belgium (fr)</option>
+
+  <option value="be-nl" >Belgium (nl)</option>
+
+  <option value="br-pt" >Brazil</option>
+
+  <option value="bg-bg" >Bulgaria</option>
+
+  <option value="ca-en" >Canada (en)</option>
+
+  <option value="ca-fr" >Canada (fr)</option>
+
+  <option value="ct-ca" >Catalonia</option>
+
+  <option value="cl-es" >Chile</option>
+
+  <option value="cn-zh" >China</option>
+
+  <option value="co-es" >Colombia</option>
+
+  <option value="hr-hr" >Croatia</option>
+
+  <option value="cz-cs" >Czech Republic</option>
+
+  <option value="dk-da" >Denmark</option>
+
+  <option value="ee-et" >Estonia</option>
+
+  <option value="fi-fi" >Finland</option>
+
+  <option value="fr-fr" >France</option>
+
+  <option value="de-de" >Germany</option>
+
+  <option value="gr-el" >Greece</option>
+
+  <option value="hk-tzh" >Hong Kong</option>
+
+  <option value="hu-hu" >Hungary</option>
+
+  <option value="is-is" >Iceland</option>
+
+  <option value="in-en" >India (en)</option>
+
+  <option value="id-en" >Indonesia (en)</option>
+
+  <option value="ie-en" >Ireland</option>
+
+  <option value="il-en" >Israel (en)</option>
+
+  <option value="it-it" >Italy</option>
+
+  <option value="jp-jp" >Japan</option>
+
+  <option value="kr-kr" >Korea</option>
+
+  <option value="lv-lv" >Latvia</option>
+
+  <option value="lt-lt" >Lithuania</option>
+
+  <option value="my-en" >Malaysia (en)</option>
+
+  <option value="mx-es" >Mexico</option>
+
+  <option value="nl-nl" >Netherlands</option>
+
+  <option value="nz-en" >New Zealand</option>
+
+  <option value="no-no" >Norway</option>
+
+  <option value="pk-en" >Pakistan (en)</option>
+
+  <option value="pe-es" >Peru</option>
+
+  <option value="ph-en" >Philippines (en)</option>
+
+  <option value="pl-pl" >Poland</option>
+
+  <option value="pt-pt" >Portugal</option>
+
+  <option value="ro-ro" >Romania</option>
+
+  <option value="ru-ru" >Russia</option>
+
+  <option value="xa-ar" >Saudi Arabia</option>
+
+  <option value="sg-en" >Singapore</option>
+
+  <option value="sk-sk" >Slovakia</option>
+
+  <option value="sl-sl" >Slovenia</option>
+
+  <option value="za-en" >South Africa</option>
+
+  <option value="es-ca" >Spain (ca)</option>
+
+  <option value="es-es" >Spain (es)</option>
+
+  <option value="se-sv" >Sweden</option>
+
+  <option value="ch-de" >Switzerland (de)</option>
+
+  <option value="ch-fr" >Switzerland (fr)</option>
+
+  <option value="tw-tzh" >Taiwan</option>
+
+  <option value="th-en" >Thailand (en)</option>
+
+  <option value="tr-tr" >Turkey</option>
+
+  <option value="us-en" >US (English)</option>
+
+  <option value="us-es" >US (Spanish)</option>
+
+  <option value="ua-uk" >Ukraine</option>
+
+  <option value="uk-en" >United Kingdom</option>
+
+  <option value="vn-en" >Vietnam (en)</option>
+
+</select>
+
+<select class="submit" name="df">
+
+  <option value="" selected>Any Time</option>
+
+  <option value="d" >Past Day</option>
+
+  <option value="w" >Past Week</option>
+
+  <option value="m" >Past Month</option>
+
+  <option value="y" >Past Year</option>
+
+</select>
+
+</form>
+
+
+  <p class="extra">&nbsp;</p>
+    <table border="0"><tr>
+    <td>
+      
+    </td>
+    <td>
+      
+        <form action="/lite/" method="post">
+          <!-- <a rel="next" href="/lite/?q=shovel+knights&amp;v=l&amp;l=us-en&amp;p=&amp;s=10&amp;ex=-1&amp;o=json&amp;dl=en&amp;ct=US&amp;sp=0&amp;vqd=4-217878560066566061009982020160589553284&amp;bing_market=en-US&amp;host_region=use&amp;dp=tPfUUhT0Wj16Vq2Yl31P8EOkaUK0qfo-spj2vOsvTI2hEzlEOKcK25D9nPk3gyt-rRv7N56wpJCekJ6CXpJSNBWvjGdqwOIFyO-zf-SNDaOT8bWbHXsk9Rt-S2LUMKXxfXb7rnSMMy2sSaAYp1LOEA.c-dZDBvz2-nYJJ3SdF3QBA&amp;dc=11&amp;api=%2Fd.js">Next Page &gt;</a> //-->
+          <input type="submit" class='navbutton' value="Next Page &gt;">
+          <input type="hidden" name="q" value="shovel knights">
+          <input type="hidden" name="s" value="10">
+          <input type="hidden" name="nextParams" value="">
+          <input type="hidden" name="v" value="l">
+          <input type="hidden" name="o" value="json">
+          <input type="hidden" name="dc" value="11">
+          <input type="hidden" name="api" value="d.js">
+          <input type="hidden" name="vqd" value="4-217878560066566061009982020160589553284">
+          
+          
+          
+          <input name="kl" value="wt-wt" type="hidden">
+          
+          
+          
+          
+        </form>
+      
+    </td>
+    </tr></table>
+
+
+
+
+<p class='extra'>&nbsp;</p>
+
+<table border="0">
+
+</table>
+
+<table border="0">
+
+<!-- Web results are present -->
+
+
+
+
+
+ <tr>
+
+    <td valign="top">1.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FShovel_Knight&amp;rut=73197df82022ca7be4f711813583a702812fe7fff47c16de3b3e7c3c1916050c" class='result-link'>Shovel Knight - Wikipedia</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      <b>Shovel</b> <b>Knight</b> is a platform video game developed and published by Yacht Club Games. Development was crowdfunded and the game was released for Nintendo 3DS, Wii U, and Windows in June 2014. It was ported to OS X and Linux in September 2014, PlayStation 3, PlayStation 4, PlayStation Vita, and Xbox One in April 2015, Amazon Fire TV in September 2015, and Nintendo Switch in March 2017. [3][6 ...
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>en.wikipedia.org/wiki/Shovel_Knight</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">2.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fshovelknight.fandom.com%2Fwiki%2FShovel_Knight_Wiki&amp;rut=182c3e33a28814c80e6c620f72f9395fe8980d8664da40e86dacb9c42ccb25b3" class='result-link'>Shovel Knight Wiki | Fandom</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      <b>Shovel</b> <b>Knight</b> Pocket Dungeon is a spin-off to the original game and a 2D top-down puzzle roguelite collaboratively developed by Yacht Club Games and Vine. It was released on December 13th, 2021 for PS4, Nintendo Switch and Steam.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>shovelknight.fandom.com/wiki/Shovel_Knight_Wiki</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">3.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F250760%2FShovel_Knight_Treasure_Trove%2F&amp;rut=9189839bd98ee2ea01685d85263b52d92a895d913a7e48ab6c97ff796713d128" class='result-link'>Save 50% on Shovel Knight: Treasure Trove on Steam</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      <b>Shovel</b> <b>Knight</b>: Treasure Trove is the complete <b>Shovel</b> <b>Knight</b> collection, containing all 5 games in the epic saga! Dig, blast, slash, and bash your way through a fantastical, 8-bit inspired world of pixel-perfect platforming, memorable characters, and world-class action-adventure gameplay.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>store.steampowered.com/app/250760/Shovel_Knight_Treasure_Trove/</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">4.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.yachtclubgames.com%2Fgames%2Fshovel%2Dknight%2Dtreasure%2Dtrove%2F&amp;rut=f57f20f22c527192f1e7c78cefe85931a579ededbcd5092d8758323f37fd35c2" class='result-link'>Shovel Knight: Treasure Trove - Yacht Club Games</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      <b>Shovel</b> <b>Knight</b>: Treasure Trove is the full and complete edition of <b>Shovel</b> <b>Knight</b>, a sweeping classic action-adventure game series with awesome gameplay, memorable characters, and an 8-bit retro aesthetic! Run, jump, and battle as <b>Shovel</b> <b>Knight</b>, wielder of the <b>Shovel</b> Blade, in a quest for his lost beloved. Take down the nefarious <b>knights</b> of the Order of No Quarter and confront their menacing ...
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>www.yachtclubgames.com/games/shovel-knight-treasure-trove/</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">5.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ffictionalcrossover.fandom.com%2Fwiki%2FShovel_Knight&amp;rut=bc3e075247174eceae2b1c357add669e44b4c207938d2cfbae373de47cefa4ea" class='result-link'>Shovel Knight - Crossover Wiki</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      For detailed information about this series, see: <b>Shovel</b> <b>Knight</b> Wiki <b>Shovel</b> <b>Knight</b> is an indie platformer game by Yacht Club Games. <b>Shovel</b> <b>Knight</b> (June 26th, 2014) for PC, Nintendo 3DS, Wii U, MacOS, PlayStation 4, Xbox One, and Nintendo Switch. Sometimes known retroactively as <b>Shovel</b> of Hope...
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>fictionalcrossover.fandom.com/wiki/Shovel_Knight</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">6.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fold.yachtclubgames.com%2Fshovel%2Dknight%2F&amp;rut=1dd4836153c3f6acf5021b459f06517c6fd740c9b8d7077bdd73e2bc7124a1ee" class='result-link'>Shovel Knight - Yacht Club Games</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      <b>Shovel</b> <b>Knight</b>: Treasure Trove is the full and complete edition of <b>Shovel</b> <b>Knight</b>, a sweeping classic action-adventure game series with awesome gameplay, memorable characters, and an 8-bit retro aesthetic! Run, jump, and battle as <b>Shovel</b> <b>Knight</b>, wielder of the <b>Shovel</b> Blade, in a quest for his lost beloved.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>old.yachtclubgames.com/shovel-knight/</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">7.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fsimple.wikipedia.org%2Fwiki%2FShovel_Knight&amp;rut=e497e822a61fb7ef99ede806e85243a9c8dedb0721011f3b0e0859089c0bd8d6" class='result-link'>Shovel Knight - Simple English Wikipedia, the free encyclopedia</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      <b>Shovel</b> <b>Knight</b> <b>Shovel</b> <b>Knight</b> is an indie 2D platform game made by Yacht Club Games in 2014. The money needed to make the game came from Kickstarter. It first came out on the Wii U, Nintendo 3DS, and Microsoft Windows. It later came out on PlayStation 3, PlayStation 4, PlayStation Vita, Xbox One, Nintendo Switch, OS X, and Linux.
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>simple.wikipedia.org/wiki/Shovel_Knight</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">8.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fshovelknight.fandom.com%2Fwiki%2FCategory%3AKnights&amp;rut=8eb7ff62e4414337f4a9577fa819432c75f857d8e1ebc09d68b6612721196ca3" class='result-link'>Category:Knights | Shovel Knight Wiki | Fandom</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      * Hexcavators Category:Hexcavators Order of No Quarter Category:Order of No Quarter B Black <b>Knight</b> D Drill <b>Knight</b> H Hive <b>Knight</b> K King <b>Knight</b> M Mole <b>Knight</b> P Plague <b>Knight</b> Polar <b>Knight</b> Prism <b>Knight</b> Propeller <b>Knight</b> Puzzle <b>Knight</b> S Scrap <b>Knight</b> Shield <b>Knight</b> <b>Shovel</b> <b>Knight</b> Specter <b>Knight</b> Spore <b>Knight</b> T Tinker <b>Knight</b> Treasure <b>Knight</b> Categories
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>shovelknight.fandom.com/wiki/Category:Knights</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">9.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Ftvtropes.org%2Fpmwiki%2Fpmwiki.php%2FVideoGame%2FShovelKnight&amp;rut=5f379c0cf24e781b5cfad42700449842f34e506ed6264ddae7b4b90e4486de06" class='result-link'>Shovel Knight (Video Game) - TV Tropes</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      <b>Shovel</b> <b>Knight</b> is a 2D platformer developed and published by Yacht Club Games. Featuring a Retraux 8-bit graphical style and inspired by the likes of Mega Man, DuckTales, Castlevania, and Dark Souls, <b>Shovel</b> <b>Knight</b> is a game that seeks to pay …
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>tvtropes.org/pmwiki/pmwiki.php/VideoGame/ShovelKnight</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+ <tr>
+
+    <td valign="top">10.&nbsp;</td>
+    <td>
+
+    
+        <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fstore.steampowered.com%2Ffranchise%2FShovelKnight&amp;rut=2d24b882c5a9f799e3d7b0ef547443f4b2add978f5a6003b26d72e97e6066bfe" class='result-link'>Steam Franchise: Shovel Knight</a>
+    
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td class='result-snippet'>
+      <b>Shovel</b> <b>Knight</b> is a sweeping classic action-adventure game with awesome gameplay, memorable characters, and an 8-bit retro aesthetic. If you love games with perfect platforming, beautiful art, infectious music, lovable bosses, humor and levity, and real heart… <b>Shovel</b> <b>Knight</b> is for you!
+    </td>
+  </tr>
+  
+
+  
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+    <td>
+      <span class='link-text'>store.steampowered.com/franchise/ShovelKnight</span>
+      
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+  
+    <tr>
+    <td colspan=2>
+      
+      
+        <form class="next_form" action="/lite/" method="post">
+          <!-- <a rel="next" href="/lite/?q=shovel+knights&amp;v=l&amp;l=us-en&amp;p=&amp;s=10&amp;ex=-1&amp;o=json&amp;dl=en&amp;ct=US&amp;sp=0&amp;vqd=4-217878560066566061009982020160589553284&amp;bing_market=en-US&amp;host_region=use&amp;dp=tPfUUhT0Wj16Vq2Yl31P8EOkaUK0qfo-spj2vOsvTI2hEzlEOKcK25D9nPk3gyt-rRv7N56wpJCekJ6CXpJSNBWvjGdqwOIFyO-zf-SNDaOT8bWbHXsk9Rt-S2LUMKXxfXb7rnSMMy2sSaAYp1LOEA.c-dZDBvz2-nYJJ3SdF3QBA&amp;dc=11&amp;api=%2Fd.js">Next Page &gt;</a> //-->
+          <input type="submit" class='navbutton' value="Next Page &gt;">
+          <input type="hidden" name="q" value="shovel knights">
+          <input type="hidden" name="s" value="10">
+          <input type="hidden" name="nextParams" value="">
+          <input type="hidden" name="v" value="l">
+          <input type="hidden" name="o" value="json">
+          <input type="hidden" name="dc" value="11">
+          <input type="hidden" name="api" value="d.js">
+          <input type="hidden" name="vqd" value="4-217878560066566061009982020160589553284">
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          
+          
+          
+          <input name="kl" value="wt-wt" type="hidden">
+          
+          
+          
+          
+        </form>
+      
+      
+    </td>
+  </tr>
+
+</table>
+
+<p class='extra'>&nbsp;</p>
+
+<form action="/lite/" method="post">
+  <input class='query' type="text" size="40" name="q" value="shovel knights" >
+  <input class='submit' type="submit" value="Search" >
+
+
+
+
+
+  <input name="kl" value="wt-wt" type="hidden">
+
+</form>
+
+<p class='extra'>&nbsp;</p>
+
+<!--
+<a href="#top">Top</a>
+//-->
+
+
+  <img src="//duckduckgo.com/t/sl_l"/>
+
+<div id='end-spacer'>&nbsp;</div>
+
+</body>
+</html>
