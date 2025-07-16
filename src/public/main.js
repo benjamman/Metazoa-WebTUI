@@ -82,10 +82,22 @@ function clickActiveArticle() {
     document.querySelector(".ar.active a.article-hyperlink.main-anchor")?.click();
 }
 
+// Usually wouldn't repeat this code, but I think it makes sense to avoid branching
 function highlightModKey(mod, highlight = true) {
     document.querySelectorAll(`[data-mod-key="${mod}"]`).forEach(item => {
         if (highlight) item.classList.add("highlight");
         else item.classList.remove("highlight");
+    });
+}
+function highlightBindKey(bind, highlight = true) {
+    document.querySelectorAll(`[data-bind-key="${bind}"]`).forEach(item => {
+        if (highlight) item.classList.add("highlight");
+        else item.classList.remove("highlight");
+    });
+}
+function removeBindHighlights() {
+    document.querySelectorAll(`[data-bind-key]`).forEach(item => {
+        item.classList.remove("highlight");
     });
 }
 
@@ -227,7 +239,8 @@ function dataShortcutSystem(event) {
     // The reason is so I can attach a shortcut to act on multiple elements easier
     const shortcuts = dataShortcuts.filter(data => {
         return (data.layer === "all" || data.layer === LAYER) &&
-               (modDown(data.mod, event)) && event.key.toLowerCase() === data.bind;
+               (modDown(data.mod, event) || data.mod === "none") && 
+               (event.key.toLowerCase() === data.bind);
     });
     shortcuts.forEach(shortcut => {
         function resetActionCounter() {
@@ -264,6 +277,17 @@ function dataShortcutSystem(event) {
 }
 
 window.addEventListener("keydown", event => {
+    highlightBindKey(event.key.toLowerCase());
+    // Update later for multiple mods on a bind
+    if (event.ctrlKey && (!event.shiftKey && !event.altKey)) {
+        highlightModKey("ctrl");
+    } else
+    if (event.shiftKey && (!event.ctrlKey && !event.altKey)) {
+        highlightModKey("shift");
+    } else
+    if (event.altKey && (!event.ctrlKey && !event.shiftKey)) {
+        highlightModKey("alt");
+    }
     if (event.key === "Escape") {
         // Should be handeld better when I have popovers
         LAYER = "normal";
@@ -321,7 +345,6 @@ window.addEventListener("keydown", event => {
                     clickActiveArticle();
                     break;
             }
-            highlightModKey("ctrl");
         }
         if (event.shiftKey && (!event.ctrlKey && !event.altKey)) {
             switch (event.key) {
@@ -358,7 +381,6 @@ window.addEventListener("keydown", event => {
                     moveToItem({ index: 9 });
                     break;
             }
-            highlightModKey("shift");
         }
         switch (event.key) {
             case "j":
@@ -399,11 +421,18 @@ window.addEventListener("keyup", event => {
     if (!event.ctrlKey)  { highlightModKey("ctrl",  false); }
     if (!event.shiftKey) { highlightModKey("shift", false); }
     if (!event.altKey)   { highlightModKey("alt",   false); }
+    if (event.key) {
+        highlightBindKey(event.key.toLowerCase(), false);
+    }
 });
 
 window.addEventListener("load", () => {
     if (!event.ctrlKey)  { highlightModKey("ctrl",  false); }
     if (!event.shiftKey) { highlightModKey("shift", false); }
     if (!event.altKey)   { highlightModKey("alt",   false); }
+    removeBindHighlights();
+    if (event.key) {
+        highlightBindKey(event.key.toLowerCase());
+    }
     setupDataShortcuts();
 });

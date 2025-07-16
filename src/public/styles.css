@@ -193,7 +193,10 @@
 .highlight-or-hidden>span:first-child {
     display: inline;
 }
-.highlight-or-hidden>span:has(.highlight) {
+.highlight-or-hidden>span:has([data-mod-key].highlight) {
     display: inline;
     z-index: 8;
+}
+.shortcut-label:has([data-mod-key]:not(.highlight)) [data-bind-key].highlight {
+    color: inherit;
 }

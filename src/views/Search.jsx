@@ -13,9 +13,9 @@ function Search({ query, articles, suggestions }) {
                         <span is-="badge" variant-="background2">
                             Toolbar
                         </span>
-                        <ShortcutLabel mod="shift" bind="t" />
+                        <ShortcutLabel bind="t" />
                     </div>
-                    <ul data-layername="toolbar" data-shortcut={`all,shift,t,sectionNavigationLayer`}>
+                    <ul data-layername="toolbar" data-shortcut={`normal,none,t,sectionNavigationLayer`}>
                         <li is-="badge" variant-="background0">
                             <a href="/">Web</a>
                         </li>
@@ -64,9 +64,9 @@ function Search({ query, articles, suggestions }) {
                         <span is-="badge" variant-="background2">
                             Suggestions
                         </span>
-                        <ShortcutLabel mod="shift" bind="s" />
+                        <ShortcutLabel bind="s" />
                     </div>
-                    <ul className="suggestions-box flexy-badges" data-layername="suggestions-box" data-shortcut={`all,shift,s,sectionNavigationLayer`}>
+                    <ul className="suggestions-box flexy-badges" data-layername="suggestions-box" data-shortcut={`normal,none,s,sectionNavigationLayer`}>
                         {suggestions.map((suggestion, index) => {
                             const visibleSuggestion = suggestion.q.replace(query, '');
                             if (visibleSuggestion.length > 32) return;
