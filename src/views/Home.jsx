@@ -9,6 +9,8 @@ function Home() {
         <h1>Welcome!</h1>
         <p>This is a WebTUI client for Metazoa, a WIP meta engine library.</p>
         <br />
+        <p>Please contact me if shortcuts mis-behave. I've been told of issues that I can't seem to reproduce, if you do contact me, please include steps to reproduce and if there's errors also the console output. Thank you!</p>
+        <br />
         <p>
             Mostly functional. There is some cosmetic imperfections and probably unhandled errors.
             The underlying Metazoa library is pre-alpha software which causes some problems. 
@@ -21,8 +23,10 @@ function Home() {
             <li>Use proxies</li>
             <li>Fix Google search</li>
             <span>^ These two are essential. Both require a Metazoa patch.</span>
+            <li>Bug report section</li>
+            <li>Footer component</li>
             <li>Don't highlihgt shortcuts from other layers</li>
-            <li>Better anchoer highlihgt</li>
+            <li>Better anchoer highlight</li>
             <li>Filters (safesearch)</li>
             <span>^ Metazoa needs implementation</span>
             <li>Image Search</li>
