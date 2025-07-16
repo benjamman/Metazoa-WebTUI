@@ -35,13 +35,10 @@ function Home() {
             <li>Use proxies</li>
             <li>Fix Google search</li>
             <span>^ These two are essential. Both require a Metazoa patch.</span>
-            <li>Bug report section</li>
-            <li>Footer component</li>
             <li>Fix shortcut labels on {'<'}TextArticle/{'>'}. Why do they look like that??</li>
             <li>Fix focus bug when typing in search</li>
             <span>^ If you click the search bar <i>*pfft using the mouse*</i> then press <ShortcutLabel bind="a"/>, for example, it will remove focus from the search bar because they layer was never set. I should add a way to use [data-trigger-shortcut="onclick,focus search"] and then name shortcuts e.g. "focus search".</span>
             <li>Don't highlihgt shortcuts from other layers</li>
-            <li>Better anchoer highlight</li>
             <li>Filters (safesearch)</li>
             <span>^ Metazoa needs implementation</span>
             <li>Image Search</li>
