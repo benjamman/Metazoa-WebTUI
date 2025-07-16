@@ -9,7 +9,12 @@ function Home() {
         <h1>Welcome!</h1>
         <p>This is a WebTUI client for Metazoa, a WIP meta engine library.</p>
         <br />
-        <p>Please contact me if shortcuts mis-behave. They do sometimes visibly stick, that's fine for now, it's a bug but only cosmetic. I've been told of issues that I can't seem to reproduce, if you do contact me, please include steps to reproduce and if there's errors also the console output. Thank you!</p>
+        <p>
+            Please contact me if shortcuts mis-behave. They do sometimes visibly stick, that's fine for now, 
+            it's a bug but only cosmetic. I've been told of issues that I can't seem to reproduce, 
+            if you do contact me, please include steps to reproduce and if there's errors also the console output. 
+            Thank you!
+        </p>
         <br />
         <p>
             Mostly functional. There is some cosmetic imperfections and probably unhandled errors.
@@ -17,9 +22,13 @@ function Home() {
             But, h(e|a)ck, this is a hackathon entry! if it wasn't jank it would be out of place. We ballin'!
         </p>
         <br />
+        <p>
+            Another thing is that this is all SSR, I'd like to fix that, but it was just easier at the time...
+            There's some things that could really slow down the server, and the client needs so much JS anway.
+        </p>
+        <br />
         <h2>Todo</h2>
         <ul style={{ color: "var(--foreground2)" }}>
-            <li>Statusline</li>
             <li>Use proxies</li>
             <li>Fix Google search</li>
             <span>^ These two are essential. Both require a Metazoa patch.</span>
