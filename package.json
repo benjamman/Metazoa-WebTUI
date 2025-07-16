@@ -6,6 +6,7 @@
     "react-dom": "^19.1.0"
   },
   "scripts": {
-    "run": "cd src; bun index.js"
+    "run": "cd src; bun index.js",
+    "hot": "cd src; bun --hot index.js"
   }
 }
