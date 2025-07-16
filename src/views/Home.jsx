@@ -11,7 +11,7 @@ function Home() {
         <br />
         <p>
             Mostly functional. There is some cosmetic imperfections and probably unhandled errors.
-            The underlying Metazoa library is barely alpha software which causes some problems. 
+            The underlying Metazoa library is pre-alpha software which causes some problems. 
             But, h(e|a)ck, this is a hackathon entry! if it wasn't jank it would be out of place. We ballin'!
         </p>
         <br />
