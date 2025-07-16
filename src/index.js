@@ -6,7 +6,7 @@ import Metazoa from "metazoa-js";
 import Home from "./views/Home";
 import Search from "./views/Search";
 
-const textSearcher = new Metazoa.TextSearch();
+const textSearcher = new Metazoa.TextSearch( [ "duckduckgo", "bing" ] );
 const suggester = new Metazoa.Suggest();
 
 const app = express();
