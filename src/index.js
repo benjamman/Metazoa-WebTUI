@@ -11,7 +11,7 @@ dotenv.config();
 import Home from "./views/Home";
 import Search from "./views/Search";
 
-let textEngines = [ "duckduckgo", "bing" ];
+let textEngines = [ "duckduckgo" ];
 if (process.env.BRAVE_API_KEY) textEngines.push("brave");
 const textSearcher = new Metazoa.TextSearch(textEngines);
 const suggester = new Metazoa.Suggest();
