@@ -69,15 +69,6 @@ app.get("/search", async (req, res) => {
     res.send(htmlTemplate(<Search query={q} articles={articles} suggestions={suggestions} />));
 });
 
-const defaultFaviconPath = path.join(__dirname, "/public/favicon.ico");
-let defaultFaviconBuffer = null; // Will be loaded once
-
-// Load default favicon on startup
-fs.readFile(defaultFaviconPath, (buffer) => {
-    defaultFaviconBuffer = buffer;
-    console.log(defaultFaviconPath)
-})
-
 app.get("/favicon/:domain", async (req, res) => {
     const domain = req.params.domain;
 
