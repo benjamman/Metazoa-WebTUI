@@ -1,12 +1,19 @@
+import path from "path";
+import fs from "fs";
 import express from "express";
 import React from "react";
 import { renderToString } from "react-dom/server";
 import Metazoa from "metazoa-js";
 
+import * as dotenv from 'dotenv';
+dotenv.config();
+
 import Home from "./views/Home";
 import Search from "./views/Search";
 
-const textSearcher = new Metazoa.TextSearch( [ "duckduckgo", "bing" ] );
+let textEngines = [ "duckduckgo", "bing" ];
+if (process.env.BRAVE_API_KEY) textEngines.push("brave");
+const textSearcher = new Metazoa.TextSearch(textEngines);
 const suggester = new Metazoa.Suggest();
 
 const app = express();
@@ -73,6 +80,43 @@ app.get("/search", async (req, res) => {
     const suggestions = await suggester.get(q);
 
     res.send(htmlTemplate(<Search query={q} articles={articles} suggestions={suggestions} />));
+});
+
+const defaultFaviconPath = path.join(__dirname, "/public/favicon.ico");
+let defaultFaviconBuffer = null; // Will be loaded once
+
+// Load default favicon on startup
+fs.readFile(defaultFaviconPath, (buffer) => {
+    defaultFaviconBuffer = buffer;
+    console.log(defaultFaviconPath)
+})
+
+app.get("/favicon/:domain", async (req, res) => {
+    const domain = req.params.domain;
+
+    if (!domain) {
+        res.redirect("/favicon.ico");
+    }
+
+    const urls = [
+        `https://${domain}/favicon.ico`,
+        `https://icons.duckduckgo.com/ip3/${domain}.ico`,
+    ];
+
+    for (const url of urls) {
+        try {
+            const response = await fetch(url);
+            if (response.ok) {
+                const buffer = Buffer.from(await response.arrayBuffer());
+                const contentType = response.headers.get("content-type");
+                if (contentType.includes("image") && buffer.length > 300) {
+                    return res.set("Content-Type", contentType).send(buffer);
+                }
+            }
+        } catch (e) {}
+    }
+
+    res.redirect("/favicon.ico");
 });
 
 app.listen(PORT, "0.0.0.0", () => {
