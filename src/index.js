@@ -21,7 +21,7 @@ const PORT = 3001;
 
 app.use(express.static("public"));
 
-function htmlTemplate(page, include = {}) {
+function htmlTemplate(page, options) {
     const pageHTML = renderToString(page);
     return `
     <!DOCTYPE html>
@@ -30,7 +30,7 @@ function htmlTemplate(page, include = {}) {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- I'd actually like to brand this more similar to KestronProgramming/Slueth maybe as a "Slueth TUI" or something. But that might get confusing since I plan on making a "Metazoa TUI" which is a literal TUI. And the name just doesn't sound that cool. -->
-        <title>Metasearch</title>
+        <title>${options?.title || "Metazoa WebTUI"}</title>
         <link rel="stylesheet" href="/styles.css">
         <script src="/main.js"></script>
       </head>
