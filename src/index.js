@@ -23,10 +23,6 @@ app.use(express.static("public"));
 
 function htmlTemplate(page, include = {}) {
     const pageHTML = renderToString(page);
-    include.htmx ??= true;
-    include.styles ??= "/styles.css";
-    include.js ??= false;
-
     return `
     <!DOCTYPE html>
     <html lang="en" data-webtui-theme="dark">
@@ -35,12 +31,12 @@ function htmlTemplate(page, include = {}) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- I'd actually like to brand this more similar to KestronProgramming/Slueth maybe as a "Slueth TUI" or something. But that might get confusing since I plan on making a "Metazoa TUI" which is a literal TUI. And the name just doesn't sound that cool. -->
         <title>Metasearch</title>
-        <link rel="stylesheet" href="${include.styles}">
-        ${include?.htmx ? '<script src="https://unpkg.com/htmx.org"></script>' : ''}
+        <link rel="stylesheet" href="/styles.css">
         <script src="/main.js"></script>
       </head>
       <body>
         <div id="app">${pageHTML}</div>
+        <span id="control-char" style="visibility:hidden;width:1ch">0</span>
       </body>
     </html>
   `;

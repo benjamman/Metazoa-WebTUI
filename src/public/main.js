@@ -5,23 +5,11 @@ function calcLh(mult = 1) {
 }
 
 function calcCh(mult = 1) {
-    return controlChar.offsetWidth * mult;
+    return document.getElementById("control-char").offsetWidth * mult;
 }
 
-let controlChar;
-
 function setAppWidth() {
-    controlChar = document.getElementById("control-char");
-    if (!controlChar) {
-        controlChar = document.createElement("span");
-        controlChar.style.width = "1ch";
-        controlChar.style.visibility = "hidden";
-        controlChar.innerText = "0";
-        controlChar.id = "control-char";
-        document.body.appendChild(controlChar);
-
-    }
-    const chCount = Math.floor(window.innerWidth / controlChar.offsetWidth);
+    const chCount = Math.floor(window.innerWidth / calcCh());
     const diff = Math.floor(calcCh(chCount) - window.innerWidth);
     const app = document.getElementById("app");
     const paddingCount = 1;
@@ -49,8 +37,6 @@ window.addEventListener("resize", () => {
         }
     }, 500);
 });
-
-window.addEventListener("load", setAppWidth);
 
 function moveToItem({ index, item, direction }) {
     const items = document.getElementsByClassName("ar");
@@ -472,13 +458,24 @@ window.addEventListener("keyup", event => {
     }
 });
 
+let APP_READY = false;
+function setup() {
+    if (APP_READY) return;
+    APP_READY = true;
+    setAppWidth();
+    setupDataShortcuts();
+    removeBindHighlights();
+}
+
 window.addEventListener("load", () => {
+    setup();
     if (!event.ctrlKey)  { highlightModKey("ctrl",  false); }
     if (!event.shiftKey) { highlightModKey("shift", false); }
     if (!event.altKey)   { highlightModKey("alt",   false); }
-    removeBindHighlights();
     if (event.key) {
         highlightBindKey(event.key.toLowerCase());
     }
-    setupDataShortcuts();
 });
+// Fallback incase jsdeliver decides it's going to be "loading" forever
+// I might even just auto cache libraries on the server incase they don't load
+setTimeout(setup, 1000);
