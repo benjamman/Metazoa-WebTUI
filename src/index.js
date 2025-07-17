@@ -21,19 +21,6 @@ const PORT = 3001;
 
 app.use(express.static("public"));
 
-function redirect(site, q) {
-    const targetUrl = site.startsWith("http")
-        ? `${site}?q=${encodeURIComponent(q)}`
-        : `https://${site.replace(/\/+$/, "")}?q=${encodeURIComponent(q)}`;
-
-    return new Response(null, {
-        status: 302,
-        headers: {
-            "Location": targetUrl,
-        },
-    });
-}
-
 function htmlTemplate(page, include = {}) {
     const pageHTML = renderToString(page);
     include.htmx ??= true;
@@ -73,8 +60,8 @@ app.get("/search", async (req, res) => {
     }
     if (q.match(/\(on engines:.+$/)) return redirect("http://localhost:3001/search",q.replace(/\(on engines:.+$/,"").trim());
     
-
-    if (q.match(/\!\w/)) return redirect("unduck.link", q);
+    // Offload bangs to Brave for now
+    if (q.match(/\!\w/)) res.redirect(`https://search.brave.com/search?q=${q}`);
 
     const articles = await textSearcher.get(q);
     const suggestions = await suggester.get(q);
