@@ -62,7 +62,7 @@ app.get("/search", async (req, res) => {
     const articles = await textSearcher.get(q);
     const suggestions = await suggester.get(q);
 
-    res.send(htmlTemplate(<Search query={q} articles={articles} suggestions={suggestions} />));
+    res.send(htmlTemplate(<Search query={q} articles={articles} suggestions={suggestions} />, { title: `=${q} - Metazoa WebTUI` }));
 });
 
 app.get("/favicon/:domain", async (req, res) => {
