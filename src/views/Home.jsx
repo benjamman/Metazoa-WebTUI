@@ -26,7 +26,7 @@ function Home() {
         </p>
         <br />
         <p>
-            Another thing is that this is all SSR, I'd like to fix that, but it was just easier at the time...
+            Another thing to note is that this is all SSR, I'd like to fix that, but it was just easier at the time...
             There's some things that could really slow down the server, and the client needs so much JS anway.
         </p>
         <br />
@@ -36,8 +36,6 @@ function Home() {
             <li>Fix Google search</li>
             <span>^ These two are essential. Both require a Metazoa patch.</span>
             <li>Fix shortcut labels on {'<'}TextArticle/{'>'}. Why do they look like that??</li>
-            <li>Fix focus bug when typing in search</li>
-            <span>^ If you click the search bar <i>*pfft using the mouse*</i> then press <ShortcutLabel bind="a"/>, for example, it will remove focus from the search bar because they layer was never set. I should add a way to use [data-trigger-shortcut="onclick,focus search"] and then name shortcuts e.g. "focus search".</span>
             <li>Don't highlihgt shortcuts from other layers</li>
             <li>Filters (safesearch)</li>
             <span>^ Metazoa needs implementation</span>
