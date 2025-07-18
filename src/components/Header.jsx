@@ -35,7 +35,7 @@ function Header({ query }) {
                 </span>
                 <ShortcutLabel bind="a" />
             </div>
-            <ul data-layername="about" data-shortcut={`normal,none,a,sectionNavigationLayer`}>
+            <ul data-layername="about" data-layertype="section-navigation" data-shortcut={`normal,none,a,sectionNavigationLayer`}>
                 <li is-="badge" variant-="background0">
                     <a href="/">Home</a>
                 </li>

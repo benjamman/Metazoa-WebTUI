@@ -7,7 +7,7 @@ function Footer() {
                 <span is-="badge" variant-="background2">Contact</span>
                 <ShortcutLabel mod="shift" bind="c" />
             </span>
-            <address style={{ padding: "1lh 1ch" }} data-layername="contact" data-shortcut={`normal,shift,c,sectionNavigationLayer`}>
+            <address style={{ padding: "1lh 1ch" }} data-layername="contact" data-layertype="section-navigation" data-shortcut={`normal,shift,c,sectionNavigationLayer`}>
                 Ben {'<'}<a href="mailto:benjamman@proton.me">benjamman@proton.me</a>{'>'} 
                 <br /><br />
                 GitHub:{' '}
@@ -23,7 +23,7 @@ function Footer() {
                 <span is-="badge" variant-="background2">Bugs</span>
                 <ShortcutLabel mod="shift" bind="b" />
             </span>
-            <div style={{ padding: "1lh 1ch" }} data-layername="bugs" data-shortcut={`normal,shift,b,sectionNavigationLayer`}>
+            <div style={{ padding: "1lh 1ch" }} data-layername="bugs" data-layertype="section-navigation" data-shortcut={`normal,shift,b,sectionNavigationLayer`}>
                 <p>
                     Having issues with this site?
                     <br /><br />
