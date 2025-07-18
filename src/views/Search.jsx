@@ -39,7 +39,34 @@ function Search({ query, articles, suggestions }) {
                         </li>*/}
                     </ul>
                 </header>
-                {articles.map((result, index) => {
+                {articles.length === 0 ? (
+                    <>
+                        <div style={{ paddingInline: "1ch" }}>
+                            <br />
+                            <span>{Math.random() < 0.5 ? "ヽ(ﾟДﾟ)ﾉ" : "(っ- ‸ - ς)"}</span>
+                            <br />
+                            <br />
+                            <h2>Whoops! We couldn't find what you were looking for.</h2>
+                            <p>
+                                Maybe try one of the suggestions? ->
+                                <br />
+                                <br />
+                                Try on another engine? 
+                                <ul>
+                                    <li><a href={`https://google.com/search?q=${query}`}>Google</a></li>
+                                    <li><a href={`https://duckduckgo.com/?q=${query}`}>Duckduckgo</a></li>
+                                    <li><a href={`https://search.brave.com/?q=${query}`}>Brave Search</a></li>
+                                </ul>
+                            </p>
+                            <br />
+                            <h2>Tip:</h2>
+                            <p>
+                                You can also use <a href="https://duckduckgo.com/bangs">!bangs</a> to directly search an engine or website.
+                            </p>
+                            <br />
+                        </div>
+                    </>
+                ) : articles.map((result, index) => {
                     let shortcut = [];
                     if (index <= 9) {
                         shortcut = ["ctrl", 0];
