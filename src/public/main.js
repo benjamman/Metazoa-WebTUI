@@ -118,6 +118,7 @@ function setLayer(newLayer, newLayerType) {
     Array.from(document.getElementsByClassName("layer-label"))?.forEach(element => {
         element.textContent = LAYER.toUpperCase();
     });
+    return [ LAYER, LAYER_TYPE ];
 }
 
 
@@ -241,14 +242,7 @@ function runActionGroup(shortcut, groupIndex) {
 
 }
 
-function dataShortcutSystem(event) {
-    // I'm allow multiple, it's a feature, not a bug
-    // The reason is so I can attach a shortcut to act on multiple elements easier
-    const shortcuts = dataShortcuts.filter(data => {
-        return (data.layer === "all" || data.layer === LAYER) &&
-               (modDown(data.mod, event) || data.mod === "none") && 
-               (event.key.toLowerCase() === data.bind);
-    });
+function runDataShortcuts(shortcuts) {
     shortcuts.forEach(shortcut => {
         function resetActionCounter() {
             if (document.activeElement === shortcut.element) {
@@ -280,6 +274,17 @@ function dataShortcutSystem(event) {
         runActionGroup(shortcut, 0);
         return true;
     });
+}
+
+function dataShortcutSystem(event) {
+    // I'm allow multiple, it's a feature, not a bug
+    // The reason is so I can attach a shortcut to act on multiple elements easier
+    const shortcuts = dataShortcuts.filter(data => {
+        return (data.layer === "all" || data.layer === LAYER) &&
+               (modDown(data.mod, event) || data.mod === "none") && 
+               (event.key.toLowerCase() === data.bind);
+    });
+    runDataShortcuts(shortcuts);
     return false;
 }
 
@@ -428,6 +433,7 @@ window.addEventListener("keydown", event => {
         }
     }
     if (LAYER_TYPE === "section-navigation") {
+        nearestFocusable = getFocusableElements(document.querySelector(`[data-layername="${LAYER}"]`));
         switch (event.key) {
             case "h":
                 nearestFocusable.left.focus();
@@ -457,6 +463,33 @@ window.addEventListener("keyup", event => {
         highlightBindKey(event.key.toLowerCase(), false);
     }
 });
+
+window.addEventListener("focus", ({ target }) => {
+    if (document.activeElement === document.body) {
+        setLayer("normal", "normal");
+        return;
+    }
+    const layeredElement = target.closest("[data-layername]");
+    if (!layeredElement) {
+        setLayer("normal", "normal");
+        return;
+    }
+
+    /*const [ newLayer, newLayerType ] = */setLayer(
+        layeredElement.getAttribute("data-layername"),
+        layeredElement.getAttribute("data-layertype")
+    );
+
+    if (!target.getAttribute("data-runshortcuton")?.contains(/\bfocus\b/)) return;
+    const shortcut = dataShortcuts.find(shortcut => shortcut.element === target);
+    if (!shortcut) return;
+    
+    runDataShortcuts([ shortcut ]);
+}, true);
+
+window.addEventListener("blur", ({ target }) => {
+    if (document.activeElement === document.body) setLayer("normal", "normal");
+}, true);
 
 let APP_READY = false;
 function setup() {
