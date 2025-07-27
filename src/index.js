@@ -29,6 +29,7 @@ function htmlTemplate(page, options) {
       <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="search" type="application/opensearchdescription+xml" title="Metazoa WebTUI" href="/opensearch.xml" />
         <!-- I'd actually like to brand this more similar to KestronProgramming/Slueth maybe as a "Slueth TUI" or something. But that might get confusing since I plan on making a "Metazoa TUI" which is a literal TUI. And the name just doesn't sound that cool. -->
         <title>${options?.title || "Metazoa WebTUI"}</title>
         <link rel="stylesheet" href="/styles.css">
@@ -46,6 +47,22 @@ app.get("/", (req, res) => {
     res.send(htmlTemplate(<Home />));
 });
 
+app.get("/suggest", async (req, res) => {
+    const q = req.query?.q;
+    if (!q) return;
+
+    const suggestions = await suggester.get(q)
+        .then(s => {
+            return [ q, s.map(r => {
+                const enginesText = r.e.map(en => `${en.short}`).join(", ");
+                return `${r.q} (on engines: ${enginesText})`;
+            })];   
+        });
+
+    res.send(suggestions);
+});
+
+
 app.get("/search", async (req, res) => {
     const q = req.query?.q;
     if (!q) {
@@ -54,7 +71,7 @@ app.get("/search", async (req, res) => {
     if (q.length > 120) {
         res.set('Content-Type', 'text/html').status(400).send(htmlTemplate(<><h1>400 Bad Request</h1><p>DoS yourself. Thank you!</p></>));
     }
-    if (q.match(/\(on engines:.+$/)) return redirect("http://localhost:3001/search",q.replace(/\(on engines:.+$/,"").trim());
+    if (q.match(/\(on engines:.+$/)) return res.redirect(`http://${req.header("host")}/search?q=${q.replace(/\(on engines:.+$/,'').trim()}`);
     
     // Offload bangs to Brave for now
     if (q.match(/\!\w/)) res.redirect(`https://search.brave.com/search?q=${q}`);
@@ -91,6 +108,20 @@ app.get("/favicon/:domain", async (req, res) => {
     }
 
     res.redirect("/favicon.ico");
+});
+
+app.get("/opensearch.xml", (req, res) => {
+    const host = req.header("host");
+    res.type("application/opensearchdescription+xml");
+    res.send(`<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+    <ShortName>Metazoa WebTUI</ShortName>
+    <Description>A WebTUI client for Metazoa</Description>
+    <Url type="text/html" template="http://${host}/search?q={searchTerms}"/>
+    <Url type="application/json" template="http://${host}/suggest?q={searchTerms}"/>
+    <Url type="application/x-suggestions+json" template="http://${host}/suggest?q={searchTerms}"/>
+    <Image height="16" width="16">http://${host}/favicon.ico</Image>
+</OpenSearchDescription>`);
 });
 
 app.listen(PORT, "0.0.0.0", () => {
